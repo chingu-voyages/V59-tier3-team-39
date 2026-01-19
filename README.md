@@ -1,38 +1,58 @@
-# voyage-tasks
+# Interview Practice App
 
-Your project's `readme` is as important to success as your code. For 
-this reason you should put as much care into its creation and maintenance
-as you would any other component of the application.
+A role-focused interview practice web app that showcases an interactive demo, a structured simulator, and a transparent case study of the build. The initial release targets web and product roles, with AI-assisted feedback added incrementally as usage and content grow.
 
-If you are unsure of what should go into the `readme` let this article,
-written by an experienced Chingu, be your starting point - 
-[Keys to a well written README](https://tinyurl.com/yk3wubft).
+## Project Scope
 
-And before we go there's "one more thing"! Once you decide what to include
-in your `readme` feel free to replace the text we've provided here.
+### MVP Features
+* **Landing page** with an interactive Q&A demo to introduce the brand, highlight the core value proposition, and showcase the team.
+​
+* **Interview simulator** with curated question sets, model answers, and explanations for Web Developers, Python Developers, UX Designers, Product Owners, and Scrum Masters.
 
-> Own it & Make it your Own!
+* **Project case study** that documents the design and development journey, including problem framing, MVP decisions, and lessons learned.
+​
 
-## Team Documents
+### Additional Planned Features
+* **Authentication** so users can create profiles and save interview sessions and feedback history.
 
-You may find these helpful as you work together to organize your project.
+* **Social sharing** of achievements or session summaries to LinkedIn and Facebook.
 
-- [Team Project Ideas](./docs/team_project_ideas.md)
-- [Team Decision Log](./docs/team_decision_log.md)
+* **Focus areas** within each role (for example: front-end, back-end, system design, stakeholder communication).
+​
+* **LLM-powered grading** for open-ended questions, including scores and targeted suggestions.
+​
+* **LLM-generated feedback summaries** across a full session to highlight strengths, gaps, and trends over time.
+​
+* **Role-specific resources** for further learning, such as curated articles, courses, and practice prompts.
+​
+* **Graphical or scenario-based questions** (for example: UI mockups, architecture diagrams, or user flows) to simulate more realistic interview challenges.
 
-Meeting Agenda templates (located in the `/docs` directory in this repo):
+## Getting Started
 
-- Meeting - Voyage Kickoff --> ./docs/meeting-voyage_kickoff.docx
-- Meeting - App Vision & Feature Planning --> ./docs/meeting-vision_and_feature_planning.docx
-- Meeting - Sprint Retrospective, Review, and Planning --> ./docs/meeting-sprint_retrospective_review_and_planning.docx
-- Meeting - Sprint Open Topic Session --> ./docs/meeting-sprint_open_topic_session.docx
+### Prerequisite
+- **Node.js**: Version **22.12.0** or higher is required.
+
+### Local Setup
+1. **Clone the repository**:
+   ```zsh
+   git clone <repo-url>
+   cd V59-tier3-team-39
+   ```
+
+2. **Install Dependencies** (Frontend):
+   ```zsh
+   cd frontend
+   npm install
+   ```
+
+3. **Run Development Server**:
+   ```zsh
+   npm run dev
+   ```
 
 ## Our Team
 
-Everyone on your team should add their name along with a link to their GitHub
-& optionally their LinkedIn profiles below. Do this in Sprint #1 to validate
-your repo access and to practice PR'ing with your team *before* you start
-coding!
+Everyone on the team should add their name along with links to GitHub & LinkedIn profiles below. Do this in Sprint #1 to validate repo access and to practice PR'ing with your team *before* you start coding!
 
 - Val Lysenko: [GitHub](https://github.com/Valeriusdev) / [LinkedIn](https://linkedin.com/in/valeriylysenko)
 - Joseph Kotvas: [GitHub](https://github.com/joekotvas) / [LinkedIn](https://www.linkedin.com/in/joekotvas/)
