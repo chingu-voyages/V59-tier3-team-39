@@ -1,5 +1,7 @@
+import HomeLayout from '../layout/HomeLayout'
+
 const App = () => {
-  return <h1 className="text-4xl">Hello, Team!</h1>
+  return <HomeLayout />
 }
 
 export default App
