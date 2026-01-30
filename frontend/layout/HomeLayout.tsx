@@ -1,6 +1,7 @@
 import Header from '../components/Header'
 import Component1 from '../components/Component1'
 import Component2 from '../components/Component2'
+import Chatbot from '../components/Chatbot'
 import Footer from '../components/Footer'
 
 const HomeLayout = () => {
@@ -16,6 +17,9 @@ const HomeLayout = () => {
           </div>
           <div className="flex justify-center w-full">
             <Component2 />
+          </div>
+          <div className="flex justify-center w-full">
+            <Chatbot />
           </div>
         </div>
       </main>
