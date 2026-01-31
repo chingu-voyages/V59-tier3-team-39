@@ -3,6 +3,6 @@ const Component1 = () => (
     <h2 className="text-lg font-semibold">Component 1</h2>
     <p>This is the first component of the homepage.</p>
   </div>
-);
+)
 
-export default Component1;
+export default Component1
