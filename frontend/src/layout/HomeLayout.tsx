@@ -7,7 +7,7 @@ import Footer from '../components/Footer'
 const HomeLayout = () => {
   return (
     <div className="flex flex-col w-full">
-      <section className="h-[70vh] w-full">
+      <section className="w-full">
         <Header />
       </section>
       <main className="w-full">
@@ -17,9 +17,6 @@ const HomeLayout = () => {
           </div>
           <div className="flex justify-center w-full">
             <Component2 />
-          </div>
-          <div className="flex justify-center w-full">
-            <Chatbot />
           </div>
         </div>
       </main>
