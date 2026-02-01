@@ -1,4 +1,4 @@
-import Header from '../components/Header'
+import Header from './Header/Header'
 import Component1 from '../components/Component1'
 import Component2 from '../components/Component2'
 import Chatbot from '../components/Chatbot'
