@@ -1,18 +1,24 @@
 import { Routes, Route } from 'react-router-dom'
-import HomeLayout from './layout/HomeLayout'
-import Interview from './layout/Interview'
-import Dashboard from './layout/Dashboard'
-import NotFound from './layout/NotFound'
-import CaseStudy from './layout/CaseStudy'
+import Home from './pages/Home'
+import Interview from './pages/Interview'
+import Dashboard from './pages/Dashboard'
+import NotFound from './pages/NotFound'
+import CaseStudy from './pages/CaseStudy'
+import MainLayout from './layouts/MainLayout'
+import InterviewLayout from './layouts/InterviewLayout'
 
 const App = () => {
   return (
     <Routes>
-      <Route path="/" element={<HomeLayout />} />
-      <Route path="/interview" element={<Interview />} />
-      <Route path="/dashboard" element={<Dashboard />} />
-      <Route path='/casestudy' element={<CaseStudy />} />
-      <Route path="*" element={<NotFound />} />
+      <Route element={<MainLayout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path='/casestudy' element={<CaseStudy />} />
+        <Route path="*" element={<NotFound />} />
+      </Route>
+      <Route element={<InterviewLayout />}>
+        <Route path="/interview" element={<Interview />} />
+      </Route>
     </Routes>
   )
 }

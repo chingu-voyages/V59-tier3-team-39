@@ -1,14 +1,11 @@
-import Header from '../components/Header'
-import Component1 from '../components/Component1'
-import Component2 from '../components/Component2'
-import Chatbot from '../components/Chatbot'
-import Footer from '../components/Footer'
+import Component1 from '../components/main/Component1'
+import Component2 from '../components/main/Component2'
+import Chatbot from '../components/main/Chatbot'
 
-const HomeLayout = () => {
+const Home = () => {
   return (
     <div className="flex flex-col w-full">
-      <section className="h-[70vh] w-full">
-        <Header />
+      <section className="h-[10vh] w-full">
       </section>
       <main className="w-full">
         <div className="w-full px-6 py-8 space-y-4">
@@ -23,11 +20,10 @@ const HomeLayout = () => {
           </div>
         </div>
       </main>
-      <div className="w-full h-[40vh]">
-        <Footer />
+      <div className="w-full h-[10vh]">
       </div>
     </div>
   )
 }
 
-export default HomeLayout
+export default Home
