@@ -42,9 +42,9 @@ const Header = () => {
       
       {isMenuOpen && (
         <div className='md:hidden'>
-          <div className='container mx-auto px-6 py-6 flex flex-col gap-4'>
+          <div className='w-11/12 mx-auto px-1 py-6 flex flex-col gap-4'>
             {navLinks.map(({to, label}) => (
-                <NavLink key={to} to={to} 
+                <NavLink key={to} to={to} onClick={() => setIsMenuOpen(false)} 
                   className={({isActive}) => `text-lg py-2 ${isActive ? 'text-orange-400' : 'hover:text-red-400'}`}>
                   {label}
                 </NavLink>
