@@ -12,14 +12,14 @@ const Role = ({role, description, imgSrc, altText, buttonText}: roleProps) => {
   return (
     <div className="space-y-4">
       <div>
-        <h3 className="text-2xl font-bold">{role}</h3>
+        <h2 className="text-2xl font-bold">{role}</h2>
         <p className="text-[1.125rem] whitespace-pre-line">{description}</p>
       </div>
       <div className="bg-gray-200 py-25 px-12 rounded-lg">
         <img src={imgSrc} alt={altText} />
       </div>
       <Button className="bg-gray-200 py-4 px-6 rounded-lg">
-        <div className="flex flex-col items-start leading-4">
+        <div className="flex flex-col items-start leading-tight">
           <span className="font-semibold text-xl">Debug Your Interview!</span>
           <span>{buttonText}</span>
         </div>
