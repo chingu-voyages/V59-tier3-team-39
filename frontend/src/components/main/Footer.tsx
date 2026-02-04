@@ -38,7 +38,7 @@ const Footer = () => {
     <footer className="bg-[#f4f4f4] mt-8">
       <div className='w-13/14 mx-auto py-12'>
         <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-8">
-          <div className='space-y-4 max-w-md'>
+          <div className='space-y-4 max-w-[480px]'>
             <img src={Logo} alt="" />
             <p>
               <span className='font-bold'>Debug Your Interview</span> is a gamified practice space where you can simulate real-world interviews, iterate on your delivery, and improve with every session. By designers and devs, for designers and devs.
