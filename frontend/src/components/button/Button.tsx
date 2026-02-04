@@ -8,8 +8,8 @@ type ButtonProps = {
 const Button = ({children, className = ''}: ButtonProps) => {
 
   return (
-    <button className={`relative overflow-hidden ${className}`}>
-        {children}
+    <button className={`relative overflow-hidden cursor-pointer ${className}`}>  
+      {children}
     </button>
   )
 }
