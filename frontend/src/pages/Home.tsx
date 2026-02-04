@@ -23,8 +23,6 @@ const Home = () => {
           </div>
         </div>
       </main>
-      <div className="w-full h-[10vh]">
-      </div>
     </div>
   )
 }
