@@ -1,4 +1,5 @@
-import Component2 from '../components/main/Component2'
+import Component1 from '../components/main/Component1'
+import Solution from '../components/main/Solution'
 import Chatbot from '../components/main/Chatbot'
 import Hero from '../components/main/Hero'
 
@@ -11,7 +12,7 @@ const Home = () => {
             <Hero />
           </div>
           <div className="flex justify-center w-full">
-            <Component2 />
+            <Solution />
           </div>
           <div className="flex justify-center w-full">
             <Chatbot />
