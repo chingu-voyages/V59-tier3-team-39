@@ -1,5 +1,5 @@
 import Component1 from '../components/main/Component1'
-import Component2 from '../components/main/Component2'
+import Solution from '../components/main/Solution'
 import Chatbot from '../components/main/Chatbot'
 import TargetedRoles from '../components/tageted-roles/TargetedRoles'
 
@@ -9,17 +9,17 @@ const Home = () => {
       <main className="w-full">
         <div className="mt-25">
           <section className="flex justify-center w-full">
-            <Component1 />
+            <Hero />
           </section>
           <section className="flex justify-center w-full">
-            <Component2 />
+            <Solution />
           </section>
           <section className="flex justify-center w-full">
             <TargetedRoles/>
           </section>
-          <section className="flex justify-center w-full">
+          <div className="flex justify-center w-full">
             <Chatbot />
-          </section>
+          </div>
         </div>
       </main>
       <div className="w-full h-[10vh]">
