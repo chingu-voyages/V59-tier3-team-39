@@ -17,7 +17,7 @@ const roleData = [
   },
   {
     role: 'Python Developers',
-    description: `Move beyond the syntax with structured practice on data structures and ${<br />} algorithms.`,
+    description: `Move beyond the syntax with structured practice on data structures and\nalgorithms.`,
     imgSrc: '#',
     altText: '[Graphic] UI Capture of a correctly answered question',
     buttonText: 'Build your skills and your confidence.'

@@ -13,7 +13,7 @@ const Role = ({role, description, imgSrc, altText, buttonText}: roleProps) => {
     <div className="space-y-4">
       <div>
         <h3 className="text-2xl font-bold">{role}</h3>
-        <p className="text-[1.125rem]">{description}</p>
+        <p className="text-[1.125rem] whitespace-pre-line">{description}</p>
       </div>
       <div className="bg-gray-200 py-25 px-12 rounded-lg">
         <img src={imgSrc} alt={altText} />
