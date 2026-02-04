@@ -17,7 +17,7 @@ const Header = () => {
 
   return (
     <header className="fixed inset-x-0 top-0 py-5 bg-white">
-      <nav className="w-11/12 mx-auto flex justify-between items-center">
+      <nav className="w-13/14 mx-auto flex justify-between items-center">
         <Link to='/'>
           {<img src={Logo} alt='Debug Your Interivew logo' />}
         </Link>
@@ -29,7 +29,7 @@ const Header = () => {
                 {label}
               </NavLink>
             ))}
-            <Button className='border rounded-full py-2 px-4'>
+            <Button className='flex items-center gap-1 border rounded-full py-2 px-4'>
               <FcGoogle /> Sign in with Google
             </Button>
           </div>
@@ -49,7 +49,7 @@ const Header = () => {
                   {label}
                 </NavLink>
               ))}
-              <Button className='border rounded-full py-2 px-4'>
+              <Button className='flex items-center gap-1 border rounded-full py-2 px-4'>
                 <FcGoogle /> Sign in with Google
               </Button>
           </div>
