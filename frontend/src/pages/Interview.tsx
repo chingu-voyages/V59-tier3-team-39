@@ -36,7 +36,6 @@ const Interview = () => {
 
   const handleBack = () => {
     if (currentQuestionIndex === 0) {
-      // Go back to role selection
       setIsInterviewStarted(false)
       setSelectedAnswer(null)
       setUserAnswers([])
