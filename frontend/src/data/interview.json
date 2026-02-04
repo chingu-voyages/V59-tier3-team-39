@@ -1,0 +1,193 @@
+{
+  "roles": [
+    {
+      "id": "product-owner",
+      "name": "Product Owner",
+      "questions": [
+        {
+          "id": "po-q1",
+          "text": "What is the Product Owner primarily responsible for?",
+          "options": [
+            { "id": "A", "text": "Writing code" },
+            { "id": "B", "text": "Managing the product backlog" },
+            { "id": "C", "text": "Managing HR" },
+            { "id": "D", "text": "Setting infrastructure" }
+          ],
+          "correctOptionId": "B"
+        },
+        { "id": "po-q2", "text": "Which artifact does the PO own?", "options": [
+            { "id": "A", "text": "Sprint Backlog" },
+            { "id": "B", "text": "Definition of Done" },
+            { "id": "C", "text": "Product Backlog" },
+            { "id": "D", "text": "CI/CD pipeline" }
+          ], "correctOptionId": "C" },
+        { "id": "po-q3", "text": "MVP stands for:", "options": [
+            { "id": "A", "text": "Most Valuable Person" },
+            { "id": "B", "text": "Minimum Viable Product" },
+            { "id": "C", "text": "Maximum Value Plan" },
+            { "id": "D", "text": "Multi-Version Plan" }
+          ], "correctOptionId": "B" },
+        { "id": "po-q4", "text": "When prioritizing backlog, PO should consider:", "options": [
+            { "id": "A", "text": "Developer preference" },
+            { "id": "B", "text": "Customer value" },
+            { "id": "C", "text": "Commitment date only" },
+            { "id": "D", "text": "Oldest items first" }
+          ], "correctOptionId": "B" },
+        { "id": "po-q5", "text": "A good user story includes:", "options": [
+            { "id": "A", "text": "Acceptance criteria" },
+            { "id": "B", "text": "Full implementation plan" },
+            { "id": "C", "text": "Server config" },
+            { "id": "D", "text": "Marketing budget" }
+          ], "correctOptionId": "A" }
+      ]
+    },
+
+    {
+      "id": "scrum-master",
+      "name": "Scrum Master",
+      "questions": [
+        { "id": "sm-q1", "text": "A Scrum Master should:", "options": [
+            { "id": "A", "text": "Assign tasks to devs" },
+            { "id": "B", "text": "Remove impediments" },
+            { "id": "C", "text": "Approve design" },
+            { "id": "D", "text": "Set product roadmap" }
+          ], "correctOptionId": "B" },
+        { "id": "sm-q2", "text": "Daily Scrum recommended timebox:", "options": [
+            { "id": "A", "text": "15 minutes" },
+            { "id": "B", "text": "45 minutes" },
+            { "id": "C", "text": "1 hour" },
+            { "id": "D", "text": "No limit" }
+          ], "correctOptionId": "A" },
+        { "id": "sm-q3", "text": "Sprint Review is for:", "options": [
+            { "id": "A", "text": "Inspecting the increment with stakeholders" },
+            { "id": "B", "text": "Planning next sprint tasks" },
+            { "id": "C", "text": "Daily status updates" },
+            { "id": "D", "text": "Code reviews" }
+          ], "correctOptionId": "A" },
+        { "id": "sm-q4", "text": "If team faces blockers, Scrum Master should:", "options": [
+            { "id": "A", "text": "Ignore them" },
+            { "id": "B", "text": "Help remove them" },
+            { "id": "C", "text": "Extend sprint length" },
+            { "id": "D", "text": "Replace the team" }
+          ], "correctOptionId": "B" },
+        { "id": "sm-q5", "text": "Servant leadership means:", "options": [
+            { "id": "A", "text": "Directing every task" },
+            { "id": "B", "text": "Supporting team autonomy" },
+            { "id": "C", "text": "Doing everyone’s work" },
+            { "id": "D", "text": "Enforcing overtime" }
+          ], "correctOptionId": "B" }
+      ]
+    },
+
+    {
+      "id": "ui-ux-designer",
+      "name": "UI/UX Designer",
+      "questions": [
+        { "id": "ux-q1", "text": "Wireframe shows:", "options": [
+            { "id": "A", "text": "Final visuals" },
+            { "id": "B", "text": "Layout and structure" },
+            { "id": "C", "text": "Server endpoints" },
+            { "id": "D", "text": "Unit tests" }
+          ], "correctOptionId": "B" },
+        { "id": "ux-q2", "text": "Good accessible color choice requires:", "options": [
+            { "id": "A", "text": "High contrast" },
+            { "id": "B", "text": "Many similar hues" },
+            { "id": "C", "text": "Color only to convey meaning" },
+            { "id": "D", "text": "Tiny fonts" }
+          ], "correctOptionId": "A" },
+        { "id": "ux-q3", "text": "Persona is:", "options": [
+            { "id": "A", "text": "A fictional target user" },
+            { "id": "B", "text": "A design tool" },
+            { "id": "C", "text": "A database schema" },
+            { "id": "D", "text": "A CSS framework" }
+          ], "correctOptionId": "A" },
+        { "id": "ux-q4", "text": "Best method to validate flows with users:", "options": [
+            { "id": "A", "text": "Usability testing" },
+            { "id": "B", "text": "Unit tests" },
+            { "id": "C", "text": "Load testing" },
+            { "id": "D", "text": "Linting" }
+          ], "correctOptionId": "A" },
+        { "id": "ux-q5", "text": "Visual hierarchy draws attention to:", "options": [
+            { "id": "A", "text": "Largest/most contrasted element" },
+            { "id": "B", "text": "Small hidden text" },
+            { "id": "C", "text": "Footer only" },
+            { "id": "D", "text": "All elements equally" }
+          ], "correctOptionId": "A" }
+      ]
+    },
+
+    {
+      "id": "web-developer",
+      "name": "Web Developer",
+      "questions": [
+        { "id": "web-q1", "text": "Semantic element for main content:", "options": [
+            { "id": "A", "text": "<footer>" },
+            { "id": "B", "text": "<main>" },
+            { "id": "C", "text": "<nav>" },
+            { "id": "D", "text": "<aside>" }
+          ], "correctOptionId": "B" },
+        { "id": "web-q2", "text": "Center a block with fixed width:", "options": [
+            { "id": "A", "text": "margin: 0 auto;" },
+            { "id": "B", "text": "text-align: center;" },
+            { "id": "C", "text": "display: inline;" },
+            { "id": "D", "text": "float: left;" }
+          ], "correctOptionId": "A" },
+        { "id": "web-q3", "text": "CORS stands for:", "options": [
+            { "id": "A", "text": "Cross-Origin Resource Sharing" },
+            { "id": "B", "text": "Client-Origin Request Security" },
+            { "id": "C", "text": "Content-Origin Remote Setup" },
+            { "id": "D", "text": "Cross-Object Routing Service" }
+          ], "correctOptionId": "A" },
+        { "id": "web-q4", "text": "HTTP 200 means:", "options": [
+            { "id": "A", "text": "Not Found" },
+            { "id": "B", "text": "Server Error" },
+            { "id": "C", "text": "OK / Success" },
+            { "id": "D", "text": "Redirect" }
+          ], "correctOptionId": "C" },
+        { "id": "web-q5", "text": "The event loop enables:", "options": [
+            { "id": "A", "text": "Non-blocking async callbacks" },
+            { "id": "B", "text": "Multi-threaded JS by default" },
+            { "id": "C", "text": "Blocking I/O only" },
+            { "id": "D", "text": "Synchronous DOM updates only" }
+          ], "correctOptionId": "A" }
+      ]
+    },
+
+    {
+      "id": "python-developer",
+      "name": "Python Developer",
+      "questions": [
+        { "id": "py-q1", "text": "GIL stands for:", "options": [
+            { "id": "A", "text": "Global Interpreter Lock" },
+            { "id": "B", "text": "Global Input Listener" },
+            { "id": "C", "text": "General Interface Layer" },
+            { "id": "D", "text": "Global I/O Library" }
+          ], "correctOptionId": "A" },
+        { "id": "py-q2", "text": "Which is a generator expression?", "options": [
+            { "id": "A", "text": "[x for x in range(3)]" },
+            { "id": "B", "text": "(x for x in range(3))" },
+            { "id": "C", "text": "def f(): return []" },
+            { "id": "D", "text": "lambda x: x" }
+          ], "correctOptionId": "B" },
+        { "id": "py-q3", "text": "Tool to create isolated envs:", "options": [
+            { "id": "A", "text": "venv / virtualenv" },
+            { "id": "B", "text": "npm" },
+            { "id": "C", "text": "pipx only" },
+            { "id": "D", "text": "make" }
+          ], "correctOptionId": "A" },
+        { "id": "py-q4", "text": "Result of list(map(lambda x: x*2, [1,2])):", "options": [
+            { "id": "A", "text": "[2,4]" },
+            { "id": "B", "text": "[1,2]" },
+            { "id": "C", "text": "map object" },
+            { "id": "D", "text": "[1,4]" }
+          ], "correctOptionId": "A" },
+        { "id": "py-q5", "text": "Decorators in Python:", "options": [
+            { "id": "A", "text": "Modify or wrap functions/classes" },
+            { "id": "B", "text": "Are only for type checking" },
+            { "id": "C", "text": "Are compile-time macros" },
+            { "id": "D", "text": "Disable GC" }
+          ], "correctOptionId": "A" }
+      ]
+    }
+  ]
+}
