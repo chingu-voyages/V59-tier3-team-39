@@ -16,7 +16,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <header className="fixed inset-x-0 top-0 py-5 bg-white">
+    <header className="fixed inset-x-0 top-0 py-5 bg-white z-50">
       <nav className="w-13/14 mx-auto flex justify-between items-center">
         <Link to='/'>
           {<img src={Logo} alt='Debug Your Interivew logo' />}
