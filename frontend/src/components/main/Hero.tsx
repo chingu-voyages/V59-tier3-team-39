@@ -17,14 +17,13 @@ const Hero = () => (
         <span>start practicing now for free.</span>
       </Button>
     </div>
-    <div className="flex flex-col justify-center bg-gray-200 px-8">
-      <p className="text-[1.5rem] font-semibold">[Interactive] Demo Question Loop</p>
-      <p className="text-xl">
-        Answer a question, check your answer, and see the instant, constructive feedback that powers our platform.
-      </p>
+      <div className="flex flex-col justify-center bg-gray-200 px-8">
+        <p className="text-[1.5rem] font-semibold">[Interactive] Demo Question Loop</p>
+        <p className="text-xl">
+          Answer a question, check your answer, and see the instant, constructive feedback that powers our platform.
+        </p>
+      </div>
     </div>
-    </div>
-    
   </div>
 )
 
