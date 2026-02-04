@@ -1,5 +1,5 @@
 const Solution = () => (
-  <div className="bg-gray-100 py-12">
+  <div className="py-12">
     <div className="w-13/14 grid md:grid-cols-2 gap-14 mx-auto">
       <div className="py-17 space-y-4">
         <h2 className="text-[1.75rem] font-bold">Interviewing is a skill.</h2>
