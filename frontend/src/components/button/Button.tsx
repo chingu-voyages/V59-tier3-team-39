@@ -9,9 +9,7 @@ const Button = ({children, className = ''}: ButtonProps) => {
 
   return (
     <button className={`relative overflow-hidden ${className}`}>
-      <span className="relative flex items-center justify-center gap-1">
         {children}
-      </span>
     </button>
   )
 }
