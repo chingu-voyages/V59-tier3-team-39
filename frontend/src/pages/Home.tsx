@@ -1,7 +1,8 @@
-import Component1 from '../components/main/Component1'
+
 import Solution from '../components/main/Solution'
 import Chatbot from '../components/main/Chatbot'
 import TargetedRoles from '../components/tageted-roles/TargetedRoles'
+import Hero from '../components/main/Hero'
 
 const Home = () => {
   return (
