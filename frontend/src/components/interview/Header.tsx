@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Button from '../button/Button'
 import { RiCloseLargeLine } from "react-icons/ri"
