@@ -26,7 +26,7 @@ const sessions = [
 const SessionGrid = () => {
 
   return (
-    <section className="w-full overflow-hidden">
+    <section className="w-full">
       <div className="w-13/14 py-12 px-12 mx-auto">
         <h2 className="text-2xl font-bold mb-4">Past Sessions</h2>
         <div className="grid md:grid-cols-2 gap-8">
@@ -35,6 +35,7 @@ const SessionGrid = () => {
           ))}
         </div>
       </div>
+
     </section>
   )
 }
