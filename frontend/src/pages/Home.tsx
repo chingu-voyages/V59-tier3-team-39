@@ -6,22 +6,22 @@ import Hero from '../components/main/Hero'
 
 const Home = () => {
   return (
-    <main className="w-full">
-      <div className="mt-25">
-        <section className="flex justify-center w-full">
-          <Hero />
-        </section>
-        <section className="flex justify-center w-full">
-          <Solution />
-        </section>
-        <section className="flex justify-center w-full">
-          <TargetedRoles/>
-        </section>
-        <div className="flex justify-center w-full">
-          <Chatbot />
+      <main className="w-full">
+        <div className="mt-25">
+          <section className="flex justify-center w-full">
+            <Hero />
+          </section>
+          <section className="flex justify-center w-full">
+            <Solution />
+          </section>
+          <section className="flex justify-center w-full">
+            <TargetedRoles/>
+          </section>
+          <div className="flex justify-center w-full">
+            <Chatbot />
+          </div>
         </div>
-      </div>
-    </main>
+      </main>
   )
 }
 
