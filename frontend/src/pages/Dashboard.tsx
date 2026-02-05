@@ -1,10 +1,15 @@
 import NewInterview from "../components/dashboard/NewInterview"
+import SessionGrid from "../components/dashboard/SessionGrid"
 
 const Dashboard = () => {
   return (
-    <div className="mt-25 bg-[#F8F8F8]">
-      <NewInterview />
-    </div>
+    <main className="w-full">
+      <div className="mt-25">
+        <NewInterview />
+        <SessionGrid />
+      </div>
+    </main>
+    
   )
 }
 
