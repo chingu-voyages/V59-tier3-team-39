@@ -6,7 +6,6 @@ import Hero from '../components/main/Hero'
 
 const Home = () => {
   return (
-    <div className="flex flex-col w-full">
       <main className="w-full">
         <div className="mt-25">
           <section className="flex justify-center w-full">
@@ -23,7 +22,6 @@ const Home = () => {
           </div>
         </div>
       </main>
-    </div>
   )
 }
 

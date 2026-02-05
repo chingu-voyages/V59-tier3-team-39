@@ -1,9 +1,15 @@
+import NewInterview from "../components/dashboard/NewInterview"
+import SessionGrid from "../components/dashboard/SessionGrid"
+
 const Dashboard = () => {
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
-      <h1 className="text-4xl font-bold">Dashboard</h1>
-      <p className="mt-4">Welcome to the dashboard!</p>
-    </div>
+    <main className=" w-full">
+      <div className="pt-25">
+        <NewInterview />
+        <SessionGrid />
+      </div>
+    </main>
+    
   )
 }
 
