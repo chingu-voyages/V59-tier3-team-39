@@ -4,7 +4,7 @@ import SessionGrid from "../components/dashboard/SessionGrid"
 const Dashboard = () => {
   return (
     <main className=" w-full">
-      <div className="pt-25">
+      <div>
         <NewInterview />
         <SessionGrid />
       </div>

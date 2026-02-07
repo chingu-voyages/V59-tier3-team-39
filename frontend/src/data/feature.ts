@@ -1,0 +1,96 @@
+
+import heroImg from '../assets/homeImages/heroImg.png'
+import solutionImg from '../assets/homeImages/solutionImg.png'
+import chinguImg from '../assets/homeImages/chinguImg.png'
+
+type FeatureContent = {
+    heading?: string
+    lead: string
+    body: string
+  }
+
+type FeatureImg = {
+  src: string
+  alt: string
+}
+
+type FeatureButton = {
+  label: string
+  subLabel: string
+  to: string
+}
+
+export type FeatureBlock = {
+  heroHeading?: string
+  sectionHeading: string
+  content: FeatureContent[]
+  img: FeatureImg
+  reverse?: boolean
+  button?: FeatureButton
+}
+
+export const heroData = {
+  heroHeading: "Your first attempt is\nrarely your best effort. ",
+  sectionHeading: "Don't make your mistakes in front of a recruiter!",
+  content: [
+    {
+      lead: 'Debug Your Interview',
+      body: 'is a gamified practice space where you can simulate real-world interviews, iterate on your delivery, and improve with every session. Why wait for the high-stakes round to find your bugs? Ship a cleaner, more confident version of yourself to your next interview.'
+    }
+  ],
+  img: {
+    src: heroImg,
+    alt: 'hero image'
+  },
+  button: {
+    label: 'Debug Your Interview!',
+    subLabel: 'Start practicing now for free.',
+    to: '/interview'
+  }
+}
+
+export const solutionData = {
+  sectionHeading: "Interviewing is a skill.",
+  content: [
+    {
+      heading: "You wouldn’t ship first-draft code to production.",
+      lead: `Don’t treat your interview like a "one-and-done" live deploy.`,
+      body: "If you aren't iterating in a safe space, you’re essentially debugging your communication in front of the person who signs the checks."
+    },
+    {
+      heading: "Debug Your Interview the easy way.",
+      lead: `Our training space fuels progress with curiosity.`,
+      body: "We use AI-powered question loops and XP tracking to help you iterate and improve until your delivery is as robust as your code. Attend your next interview with the confidence and clarity needed to land the role."
+    }
+  ],
+  img: {
+    src: solutionImg,
+    alt: 'solution image'
+  }
+}
+
+export const chinguData = {
+  sectionHeading: "Build with us.",
+  content: [
+    {
+      heading: "Where the Voyage Begins",
+      lead: "This project was born in the Chingu community: ",
+      body: "a place where developers and designers level collaborate to build real-world software in an agile, supportive environment."
+    },
+    {
+      heading: "Join a Global Tech Collective",
+      lead: "This project was born in the Chingu community: ",
+      body: "Join thousands of industry practitioners who are building their portfolios through hands-on collaboration."
+    }
+  ],
+  img: {
+    src: chinguImg,
+    alt: 'chingu image'
+  },
+  reverse: true,
+  button: {
+    label: 'Join the Community',
+    subLabel: 'Visit Chingu.io for more information',
+    to: 'https://chingu.io'
+  }
+}
