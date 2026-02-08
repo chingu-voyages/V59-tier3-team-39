@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { RiCloseLargeLine } from 'react-icons/ri'
-import Logo from '../../assets/Logo.png'
+import Logo from '../../assets/logo.svg'
 
 const Header = () => {
   return (
@@ -11,7 +11,9 @@ const Header = () => {
           Select a role
         </span>
         <button className="border border-gray-300 rounded-sm py-1 px-1.5 hover:text-red-400">
-          <Link to="/"><RiCloseLargeLine size={24} /></Link>
+          <Link to="/">
+            <RiCloseLargeLine size={24} />
+          </Link>
         </button>
       </nav>
     </header>
