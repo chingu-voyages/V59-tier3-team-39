@@ -1,27 +1,32 @@
 
-import Solution from '../components/main/Solution'
 import Chatbot from '../components/main/Chatbot'
+import FeatureSection from '../components/main/FeatureSection'
 import TargetedRoles from '../components/tageted-roles/TargetedRoles'
-import Hero from '../components/main/Hero'
+import { chinguData, heroData, solutionData } from '../data/feature'
 
 const Home = () => {
   return (
-      <main className="w-full">
-        <div className="mt-25">
-          <section className="flex justify-center w-full">
-            <Hero />
-          </section>
-          <section className="flex justify-center w-full">
-            <Solution />
-          </section>
-          <section className="flex justify-center w-full">
-            <TargetedRoles/>
-          </section>
-          <div className="flex justify-center w-full">
-            <Chatbot />
-          </div>
+    <main>
+      <section className='bg-[#f8f8f8]'>
+        <div className='max-w-7xl mx-auto'>
+          <FeatureSection {...heroData} />
         </div>
-      </main>
+      </section>
+      <div className='max-w-7xl mx-auto'>
+        <section>
+          <FeatureSection {...solutionData}/>
+        </section>
+        <section>
+          <TargetedRoles/>
+        </section>
+        <section>
+          <FeatureSection {...chinguData} />
+        </section>
+        <section className="flex justify-center w-full">
+          <Chatbot />
+        </section>    
+      </div>
+    </main>
   )
 }
 
