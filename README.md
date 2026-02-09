@@ -6,28 +6,28 @@ A role-focused interview practice web app that showcases an interactive demo, a 
 
 ### MVP Features
 
-* **Landing page** with an interactive Q&A demo to introduce the brand, highlight the core value proposition, and showcase the team.
-​
-* **Interview simulator** with curated question sets, model answers, and explanations for Web Developers, Python Developers, UX Designers, Product Owners, and Scrum Masters.
+- **Landing page** with an interactive Q&A demo to introduce the brand, highlight the core value proposition, and showcase the team.
+  ​
+- **Interview simulator** with curated question sets, model answers, and explanations for Web Developers, Python Developers, UX Designers, Product Owners, and Scrum Masters.
 
-* **Project case study** that documents the design and development journey, including problem framing, MVP decisions, and lessons learned.
-​
+- **Project case study** that documents the design and development journey, including problem framing, MVP decisions, and lessons learned.
+  ​
 
 ### Additional Planned Features
 
-* **Authentication** so users can create profiles and save interview sessions and feedback history.
+- **Authentication** so users can create profiles and save interview sessions and feedback history.
 
-* **Social sharing** of achievements or session summaries to LinkedIn and Facebook.
+- **Social sharing** of achievements or session summaries to LinkedIn and Facebook.
 
-* **Focus areas** within each role (for example: front-end, back-end, system design, stakeholder communication).
-​
-* **LLM-powered grading** for open-ended questions, including scores and targeted suggestions.
-​
-* **LLM-generated feedback summaries** across a full session to highlight strengths, gaps, and trends over time.
-​
-* **Role-specific resources** for further learning, such as curated articles, courses, and practice prompts.
-​
-* **Graphical or scenario-based questions** (for example: UI mockups, architecture diagrams, or user flows) to simulate more realistic interview challenges.
+- **Focus areas** within each role (for example: front-end, back-end, system design, stakeholder communication).
+  ​
+- **LLM-powered grading** for open-ended questions, including scores and targeted suggestions.
+  ​
+- **LLM-generated feedback summaries** across a full session to highlight strengths, gaps, and trends over time.
+  ​
+- **Role-specific resources** for further learning, such as curated articles, courses, and practice prompts.
+  ​
+- **Graphical or scenario-based questions** (for example: UI mockups, architecture diagrams, or user flows) to simulate more realistic interview challenges.
 
 ## Getting Started
 
@@ -59,12 +59,11 @@ A role-focused interview practice web app that showcases an interactive demo, a 
 
 ## Our Team
 
-Everyone on the team should add their name along with links to GitHub & LinkedIn profiles below. Do this in Sprint #1 to validate repo access and to practice PR'ing with your team *before* you start coding!
+Everyone on the team should add their name along with links to GitHub & LinkedIn profiles below. Do this in Sprint #1 to validate repo access and to practice PR'ing with your team _before_ you start coding!
 
-* Val Lysenko: [GitHub](https://github.com/Valeriusdev) / [LinkedIn](https://linkedin.com/in/valeriylysenko)
-* Joseph Kotvas: [GitHub](https://github.com/joekotvas) / [LinkedIn](https://www.linkedin.com/in/joekotvas/)
-* Ekaterina Kushnir: [GitHub](https://github.com/katiaku) / [LinkedIn](https://www.linkedin.com/in/ekaterina-kushnir-mikhaylova/)
-* Ruben Aguilar: [GitHub](https://github.com/rubenaguilardev) / [LinkedIn](https://linkedin.com/in/rubenaguilar-)
-* Jorge Alvarado: [GitHub](https://github.com/alvarado08) / [LinkedIn](https://linkedin.com/in/jorgep-alvarado)
-
-* Teammate name #n: [GitHub](https://github.com/ghaccountname) / [LinkedIn](https://linkedin.com/in/liaccountname)
+- Val Lysenko: [GitHub](https://github.com/Valeriusdev) / [LinkedIn](https://linkedin.com/in/valeriylysenko)
+- Joseph Kotvas: [GitHub](https://github.com/joekotvas) / [LinkedIn](https://www.linkedin.com/in/joekotvas/)
+- Ekaterina Kushnir: [GitHub](https://github.com/katiaku) / [LinkedIn](https://www.linkedin.com/in/ekaterina-kushnir-mikhaylova/)
+- Ruben Aguilar: [GitHub](https://github.com/rubenaguilardev) / [LinkedIn](https://linkedin.com/in/rubenaguilar-)
+- Jorge Alvarado: [GitHub](https://github.com/alvarado08) / [LinkedIn](https://linkedin.com/in/jorgep-alvarado)
+- Rigo L: [GitHub](https://github.com/r1g023) / [LinkedIn](https://www.linkedin.com/in/rigo0101/)
