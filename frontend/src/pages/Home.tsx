@@ -1,27 +1,30 @@
-
 import Solution from '../components/main/Solution'
 import Chatbot from '../components/main/Chatbot'
 import TargetedRoles from '../components/tageted-roles/TargetedRoles'
 import Hero from '../components/main/Hero'
+import CaseStudy from '../components/main/CaseStudy'
 
 const Home = () => {
   return (
-      <main className="w-full">
-        <div className="mt-25">
-          <section className="flex justify-center w-full">
-            <Hero />
-          </section>
-          <section className="flex justify-center w-full">
-            <Solution />
-          </section>
-          <section className="flex justify-center w-full">
-            <TargetedRoles/>
-          </section>
-          <div className="flex justify-center w-full">
-            <Chatbot />
-          </div>
+    <main className="w-full">
+      <div className="mt-25">
+        <section className="flex justify-center w-full">
+          <Hero />
+        </section>
+        <section className="flex justify-center w-full">
+          <Solution />
+        </section>
+        <section className="flex justify-center w-full">
+          <TargetedRoles />
+        </section>
+        <section className="flex justify-center w-full">
+          <CaseStudy />
+        </section>
+        <div className="flex justify-center w-full">
+          <Chatbot />
         </div>
-      </main>
+      </div>
+    </main>
   )
 }
 
