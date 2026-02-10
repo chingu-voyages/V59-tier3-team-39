@@ -3,6 +3,7 @@ import Chatbot from '../components/main/Chatbot'
 import FeatureSection from '../components/main/FeatureSection'
 import TargetedRoles from '../components/tageted-roles/TargetedRoles'
 import { chinguData, heroData, solutionData } from '../data/feature'
+import CaseStudy from '../components/main/CaseStudy'
 
 const Home = () => {
   return (
@@ -21,6 +22,9 @@ const Home = () => {
         </section>
         <section>
           <FeatureSection {...chinguData} />
+        </section>
+        <section className="flex justify-center w-full">
+          <CaseStudy />
         </section>
         <section className="flex justify-center w-full">
           <Chatbot />
