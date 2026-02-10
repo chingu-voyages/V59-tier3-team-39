@@ -51,7 +51,7 @@ const Footer = () => {
           <div className="grid  grid-cols-2 md:flex gap-4 md:gap-6 lg:gap-12">
             {footerData.map((col) => (
               <div key={col.title} className="flex flex-col leading-[1.35]" aria-label='col.title'>
-                <span className="text-lg font-bold">{col.title}</span>
+                <span className="text-lg lg:text-xl font-bold">{col.title}</span>
                 {col.links.map(({ label, link }) => 
                   link.startsWith('http') ? (
                     <a 
