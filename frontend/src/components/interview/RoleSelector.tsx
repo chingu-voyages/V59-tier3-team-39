@@ -14,10 +14,10 @@ const RoleSelector = ({
   return (
     <div className="flex flex-col grow items-center h-[calc(100vh-110px)] pt-16">
       <div className="mb-8 w-lg">
-        <h1 className="text-2xl font-bold text-black mb-2">
+        <h1 className="text-2xl font-bold mb-2 text-secondary-shade">
           Please choose a role:
         </h1>
-        <p className="text-black">
+        <p>
           We'll use your response to personalize your interview experience.
           You'll be able to change this later.
         </p>
@@ -64,7 +64,7 @@ const RoleSelector = ({
         <button
           onClick={onStartInterview}
           disabled={!selectedRole}
-          className="px-4 py-2 bg-secondary-tint border-[3px] border-white/20 cursor-pointer  rounded-lg disabled:opacity-40 disabled:cursor-auto transition-all flex items-center gap-8 min-w-41.5 min-h-13.5"
+          className="px-4 py-2 bg-secondary-tint border-[3px] border-white/20 cursor-pointer rounded-lg disabled:opacity-40 disabled:cursor-auto transition-all flex items-center gap-8 min-w-41.5 min-h-13.5"
         >
           <p className="text-white font-medium mx-auto">Continue</p>
           {selectedRole && (

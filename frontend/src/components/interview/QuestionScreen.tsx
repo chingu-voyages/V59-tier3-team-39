@@ -32,11 +32,13 @@ const QuestionScreen = ({
   return (
     <div className="flex flex-col grow items-center h-[calc(100vh-110px)] pt-12">
       <div className="mb-8 w-lg">
-        <h2 className="text-sm font-medium text-gray-600 mb-6">
+        <h2 className="text-sm font-medium mb-6">
           Question {questionNumber} of {totalQuestions}
         </h2>
-        <h1 className="text-2xl font-bold text-black mb-2">{question.text}</h1>
-        <p className="text-black">Select the best answer below.</p>
+        <h1 className="text-2xl font-bold mb-2 text-secondary-shade">
+          {question.text}
+        </h1>
+        <p>Select the best answer below.</p>
       </div>
 
       <div className="w-lg space-y-6 mb-auto">
@@ -61,9 +63,9 @@ const QuestionScreen = ({
             >
               <div className="flex items-center gap-4">
                 <div className="w-6 h-6 rounded-full border border-[#D7D7D7] bg-[#ebebeb]"></div>
-                <span className="text-lg text-black">{option.text}</span>
+                <span className="text-lg">{option.text}</span>
               </div>
-              <span className="text-gray-600 font-medium font-[#787878] border border-[#D7D7D7] rounded-lg w-8 h-8 flex items-center justify-center">
+              <span className="font-medium border border-[#D7D7D7] rounded-lg w-8 h-8 flex items-center justify-center">
                 {option.id}
               </span>
             </button>
@@ -74,7 +76,7 @@ const QuestionScreen = ({
       <div className="w-full bg-secondary-bg-gradient-a border-t-[3px] border-secondary-base/10 flex items-center justify-between px-8 h-24">
         <button
           onClick={onBack}
-          className="px-4 py-2 bg-secondary-tint border-[3px] border-white/20 cursor-pointer  rounded-lg disabled:opacity-40 disabled:cursor-auto transition-all flex items-center gap-8 min-w-41.5 min-h-13.5"
+          className="px-4 py-2 bg-secondary-tint border-[3px] border-white/20 cursor-pointer rounded-lg disabled:opacity-40 disabled:cursor-auto transition-all flex items-center gap-8 min-w-41.5 min-h-13.5"
         >
           <p className="text-white font-medium mx-auto">Back</p>
           <span className="text-white font-medium bg-white/10 rounded-lg w-8 h-8 flex items-center justify-center">
@@ -87,7 +89,7 @@ const QuestionScreen = ({
         <button
           onClick={onContinue}
           disabled={!selectedAnswer}
-          className="px-4 py-2 bg-secondary-tint border-[3px] border-white/20 cursor-pointer  rounded-lg disabled:opacity-40 disabled:cursor-auto transition-all flex items-center gap-8 min-w-41.5 min-h-13.5"
+          className="px-4 py-2 bg-secondary-tint border-[3px] border-white/20 cursor-pointer rounded-lg disabled:opacity-40 disabled:cursor-auto transition-all flex items-center gap-8 min-w-41.5 min-h-13.5"
         >
           <p className="text-white font-medium mx-auto">
             {questionNumber >= totalQuestions ? 'Finish' : 'Continue'}
