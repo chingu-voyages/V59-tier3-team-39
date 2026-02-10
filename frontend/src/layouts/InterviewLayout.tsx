@@ -1,6 +1,5 @@
 import { Outlet } from 'react-router-dom'
 import Header from '../components/interview/Header'
-import Footer from '../components/interview/Footer'
 
 const InterviewLayout = () => {
   return (
@@ -9,7 +8,6 @@ const InterviewLayout = () => {
       <div className="flex-1 flex items-center justify-center overflow-hidden">
         <Outlet />
       </div>
-      <Footer />
     </div>
   )
 }
