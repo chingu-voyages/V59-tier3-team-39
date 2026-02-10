@@ -1,8 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @import 'tailwindcss';
 
-@layer theme {
+@theme {
+  --font-roboto: 'Roboto', sans-serif;
+
+  --color-primary-base: #368cdc;
+  --color-primary-stroke-bold: #7ecbe9;
+  --color-secondary-tint: #a97642;
+  --color-secondary-base: #8c6239;
+}
+
+@layer base {
   body {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-roboto);
+  }
+}
+
+@layer utilities {
+  .bg-secondary-bg-gradient-a {
+    background-image: linear-gradient(
+      to bottom,
+      #eee7e0 2%,
+      #f7f5f3 9%,
+      #f8f6f5 80%,
+      #f2ebe5 100%
+    );
   }
 }
