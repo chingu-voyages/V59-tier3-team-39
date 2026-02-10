@@ -26,9 +26,9 @@ const Home = () => {
         <section className="flex justify-center w-full">
           <CaseStudy />
         </section>
-        <section className="flex justify-center w-full">
+        {/* <section className="flex justify-center w-full">
           <Chatbot />
-        </section>    
+        </section>     */}
       </div>
     </main>
   )

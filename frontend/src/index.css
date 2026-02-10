@@ -3,16 +3,20 @@
 
 @theme {
   --font-roboto: 'Roboto', sans-serif;
-
+  
   --color-primary-base: #368cdc;
   --color-primary-stroke-bold: #7ecbe9;
   --color-secondary-tint: #a97642;
   --color-secondary-base: #8c6239;
+  --color-secondary-shade: #4B3927;
+
+  --color-secondary-stroke-base: #e5dbd2;
 }
 
 @layer base {
   body {
     font-family: var(--font-roboto);
+    color: #333333;
   }
 }
 
@@ -26,4 +30,14 @@
       #f2ebe5 100%
     );
   }
+  .bg-secondary-bg-gradient-b {
+    background-image: linear-gradient(
+      to top,
+      #eee7e0 2%,
+      #f7f5f3 9%,
+      #f8f6f5 80%,
+      #f2ebe5 100%
+    )
+  }
+  
 }

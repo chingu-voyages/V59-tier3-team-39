@@ -7,7 +7,10 @@ const MainLayout = () => {
     <div className="min-h-screen">
       <Header />
       <Outlet />
-      <Footer />
+      <div className="bg-secondary-bg-gradient-b border-t-4 border-secondary-stroke-base">
+        <Footer />
+      </div>
+      
     </div>
   )
 }
