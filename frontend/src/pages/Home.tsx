@@ -7,7 +7,7 @@ import CaseStudy from '../components/main/CaseStudy'
 
 const Home = () => {
   return (
-    <main>
+    <main className='pt-21'>
       <section className='bg-[#f8f8f8]'>
         <div className='max-w-7xl mx-auto'>
           <FeatureSection {...heroData} />

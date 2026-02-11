@@ -36,8 +36,8 @@ const year = new Date().getFullYear()
 
 const Footer = () => {
   return (
-    <footer className="max-w-7xl mx-auto">
-      <div className="mx-auto px-6 md:px-12 pt-6 md:pt-12 pb-8 md:pb-10">
+    <footer className="bg-secondary-bg-gradient-b border-t-4 border-secondary-stroke-base">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 pt-6 md:pt-12 pb-8 md:pb-10">
         <div className="flex flex-col md:flex-row md:justify-between md:items-center md:gap-14 lg:gap-76 mb-5 md:mb-8">
           <div className="md:flex-1">
             <img src={Logo} alt="Debug Your Interview Logo" className='mb-3 md:mb-4' />
