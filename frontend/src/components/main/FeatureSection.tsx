@@ -6,7 +6,7 @@ type FeatureProps = FeatureBlock
 const FeatureSection = ({heroHeading, sectionHeading, content, img, reverse, button}: FeatureProps) => {
 
   return (
-    <div className="py-12 w-13/14 mx-auto">
+    <div className=" w-13/14 py-14 md:py-8 lg:py-14 mx-auto">
       <div className="grid md:grid-cols-2 gap-14 items-center">
         <div className={`space-y-4 ${reverse ? 'md:order-2' : ''}`}>
           {heroHeading ? 
