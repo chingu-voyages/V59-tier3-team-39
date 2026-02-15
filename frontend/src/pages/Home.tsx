@@ -4,25 +4,29 @@ import FeatureSection from '../components/main/FeatureSection'
 import TargetedRoles from '../components/tageted-roles/TargetedRoles'
 import { chinguData, heroData, solutionData } from '../data/feature'
 import CaseStudy from '../components/main/CaseStudy'
+import heroBG from '../assets/hero/heroBG.png'
+import Hero from '../components/main/Hero'
 
 const Home = () => {
   return (
-    <main className='pt-21'>
-      <section className='bg-[#f8f8f8]'>
+    <main className='pt-17'>
+      <div 
+        className='bg-cover bg-center border-b-4 border-primary-stroke' 
+        style={{backgroundImage: `url(${heroBG})`}}>
         <div className='max-w-7xl mx-auto'>
-          <FeatureSection {...heroData} />
+          <Hero />
         </div>
-      </section>
+      </div>
       <div className='max-w-7xl mx-auto'>
-        <section>
+        
           <FeatureSection {...solutionData}/>
-        </section>
+        
         <section>
           <TargetedRoles/>
         </section>
-        <section>
-          <FeatureSection {...chinguData} />
-        </section>
+        
+        <FeatureSection {...chinguData} />
+        
         <section className="flex justify-center w-full">
           <CaseStudy />
         </section>
