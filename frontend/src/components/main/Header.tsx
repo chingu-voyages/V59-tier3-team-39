@@ -36,9 +36,9 @@ const Header = () => {
   )
 
   return (
-    <header className="w-full fixed inset-x-0 top-0 bg-secondary-bg-gradient-a py-3 z-50 border-b-6 border-secondary-stroke-base rounded-b-4xl">
+    <header className="w-full fixed inset-x-0 top-0 bg-secondary-bg-gradient-a pt-3 pb-2.5 z-50 border-b-6 border-secondary-stroke-base rounded-b-4xl">
       <nav className="max-w-7xl mx-auto flex justify-between items-center px-4.5 md:px-10.5 lg:px-12">
-        <Link to="/">{<img src={Logo} alt="Debug Your Interivew logo" />}</Link>
+        <Link to="/">{<img src={Logo} className='h-15' alt="Debug Your Interivew logo" />}</Link>
         <div className="hidden md:flex">
           <div className="flex items-center lg:text-xl gap-6 lg:gap-8">{navLinkRender()}</div>
         </div>

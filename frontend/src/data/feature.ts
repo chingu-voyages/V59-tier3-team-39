@@ -1,11 +1,10 @@
 
-import heroImg from '../assets/homeImages/heroImg.png'
-import solutionImg from '../assets/homeImages/solutionImg.png'
+import solutionBg from '../assets/solution/solutionbg.png'
 import chinguImg from '../assets/homeImages/chinguImg.png'
 
 type FeatureContent = {
     heading?: string
-    lead: string
+    lead?: string
     body: string
   }
 
@@ -18,38 +17,36 @@ type FeatureButton = {
   label: string
   subLabel: string
   to: string
+  variant: 'blue'
 }
 
 export type FeatureBlock = {
-  heroHeading?: string
   sectionHeading: string
   content: FeatureContent[]
-  img: FeatureImg
-  reverse?: boolean
+  img?: FeatureImg
   button?: FeatureButton
 }
 
-export const heroData = {
-  heroHeading: "Your first attempt is\nrarely your best effort. ",
+export const heroData: FeatureBlock = {
   sectionHeading: "Don't make your mistakes in front of a recruiter!",
   content: [
     {
       lead: 'Debug Your Interview',
-      body: 'is a gamified practice space where you can simulate real-world interviews, iterate on your delivery, and improve with every session. Why wait for the high-stakes round to find your bugs? Ship a cleaner, more confident version of yourself to your next interview.'
+      body: 'is a gamified practice space where you can simulate real-world interviews, iterate on your delivery, and improve with every session.'
+    },
+    {
+      body: 'Why wait for the high-stakes round to find your bugs? Ship a cleaner, more confident version of yourself to your next interview.'
     }
   ],
-  img: {
-    src: heroImg,
-    alt: 'hero image'
-  },
   button: {
     label: 'Debug Your Interview!',
     subLabel: 'Start practicing now for free.',
-    to: '/interview'
+    to: '/interview',
+    variant: 'blue'
   }
 }
 
-export const solutionData = {
+export const solutionData: FeatureBlock = {
   sectionHeading: "Interviewing is a skill.",
   content: [
     {
@@ -64,12 +61,12 @@ export const solutionData = {
     }
   ],
   img: {
-    src: solutionImg,
+    src: solutionBg,
     alt: 'solution image'
   }
 }
 
-export const chinguData = {
+export const chinguData: FeatureBlock = {
   sectionHeading: "Build with us.",
   content: [
     {
@@ -87,10 +84,10 @@ export const chinguData = {
     src: chinguImg,
     alt: 'chingu image'
   },
-  reverse: true,
   button: {
     label: 'Join the Community',
     subLabel: 'Visit Chingu.io for more information',
-    to: 'https://chingu.io'
+    to: 'https://chingu.io',
+    variant: 'blue'
   }
 }
