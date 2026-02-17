@@ -1,8 +1,6 @@
 
-import heroBg from '../assets/hero/herorightbg.png'
 import solutionBg from '../assets/solution/solutionbg.png'
 import chinguImg from '../assets/homeImages/chinguImg.png'
-import mainButtonImg from '../assets/button/button.png'
 
 type FeatureContent = {
     heading?: string
@@ -19,13 +17,13 @@ type FeatureButton = {
   label: string
   subLabel: string
   to: string
-  img: string
+  variant: 'blue'
 }
 
 export type FeatureBlock = {
   sectionHeading: string
   content: FeatureContent[]
-  img: FeatureImg
+  img?: FeatureImg
   button?: FeatureButton
 }
 
@@ -40,15 +38,11 @@ export const heroData: FeatureBlock = {
       body: 'Why wait for the high-stakes round to find your bugs? Ship a cleaner, more confident version of yourself to your next interview.'
     }
   ],
-  img: {
-    src: heroBg,
-    alt: 'hero image'
-  },
   button: {
     label: 'Debug Your Interview!',
     subLabel: 'Start practicing now for free.',
     to: '/interview',
-    img: mainButtonImg
+    variant: 'blue'
   }
 }
 
@@ -94,6 +88,6 @@ export const chinguData: FeatureBlock = {
     label: 'Join the Community',
     subLabel: 'Visit Chingu.io for more information',
     to: 'https://chingu.io',
-    img: mainButtonImg
+    variant: 'blue'
   }
 }

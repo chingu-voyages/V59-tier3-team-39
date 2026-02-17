@@ -2,10 +2,14 @@
 @import 'tailwindcss';
 
 @theme {
+
+  --breakpoint-md-lg: 51.875rem;
+  --breakpoint-md-lg-x: 63.125rem;
+
   --font-roboto: 'Roboto', sans-serif;
   
   --color-primary-base: #368cdc;
-  --color-primary-tint: #4499E7;
+  --color-primary-tint: #4499e7;
   --color-primary-stroke: #eef5fc;
   --color-primary-stroke-bold: #7ecbe9;
   --color-secondary-tint: #a97642;
@@ -60,3 +64,6 @@
   }
   
 }
+
+
+
