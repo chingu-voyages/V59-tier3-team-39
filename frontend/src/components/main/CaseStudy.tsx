@@ -5,7 +5,7 @@ import { ContentBody } from '../case-study/ContentBody'
 
 const CaseStudy = () => {
   return (
-    <main className="min-h-screen bg-white pt-25">
+    <main className="min-h-screen bg-white pt-1">
       <Header />
 
       <section className="px-6 py-8 md:py-12 lg:py-16">
