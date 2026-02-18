@@ -65,6 +65,7 @@ const TargetedRoles = () => {
             key={card.title.role}
             role='tab'
             aria-selected={index === isActive}
+
             onClick={() => setIsActive(index)} 
             className={`
               min-w-30 flex flex-col z-10 -mb-px px-3.75 py-1.75 font-bold leading-[1.10] border-t border-r 
@@ -86,7 +87,7 @@ const TargetedRoles = () => {
             isActive === index ? <Role key={card.title.role} {...card} /> : null 
           ))}
         </div>
-        <div className="hidden md:flex gap-6 md-lg:gap-8 md-lg-x:gap-9 lg:gap-9 xl:gap-14 w-full p-8 lg:p-10 xl:p-12">
+        <div className="hidden md:grid grid-cols-3 gap-6 md-lg:gap-8 md-lg-x:gap-9 lg:gap-9 xl:gap-14 w-full p-8 lg:p-10 xl:p-12">
           {roleData.map(card => (
             <Role key={card.title.role} {...card} /> 
           ))}

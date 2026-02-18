@@ -26,7 +26,7 @@ type RoleProps = {
 
 const Role = ({title, content, button}: RoleProps) => {
   return (
-    <div className="md:max-w-57.25 lg:min-w-73.5 xl:max-w-89.5">
+    <div className="md:max-w-65 lg:min-w-73.5 xl:max-w-89.5">
       <div className={`md:space-y-1 mb-12 md:mb-10 ${title.role === 'Python' ? 'xl:mb-15.5' : ''} ${title.role === 'UX' ? 'mt-0': 'md:mt-6'}`}>
         <h2 className="hidden md:block text-xl lg:text-2xl xl:text-[1.75rem] font-bold leading-[1.15]">{title.role}<span className="text-secondary-base"> {title.type}</span></h2>
         <p className="sm:text-center md:text-start text-sm lg:text-base xl:text-lg leading-[1.35]">
