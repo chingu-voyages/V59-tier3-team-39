@@ -20,20 +20,23 @@ const Home = () => {
       <div className='max-w-7xl mx-auto'>
         
           <FeatureSection {...solutionData}/>
-        
-        <section>
+      </div>  
+      <div className='bg-primary-bg-gradient-section'>
+        <div className='max-w-7xl mx-auto'>
           <TargetedRoles/>
-        </section>
-        
-        <FeatureSection {...chinguData} />
+        </div>
+      </div>
         
         <section className="flex justify-center w-full">
           <CaseStudy />
         </section>
+        <FeatureSection {...chinguData} />
+        
+        
         {/* <section className="flex justify-center w-full">
           <Chatbot />
         </section>     */}
-      </div>
+      
     </main>
   )
 }
