@@ -44,12 +44,11 @@ const FeatureSection = ({id, sectionHeading, content, img, button}: FeatureProps
       </div>
       <div className="relative h-full order-1 md:order-0 mx-auto">
         <div className="absolute inset-y-0 left-0 w-1 bg-secondary-shade/10" />
-        { img && <img src={img.src} alt="" className={`${id === 3 ? 'xl:max-h-118' : ''} object-cover object-center h-full w-full`} /> }
+        { img && <img src={img.src} alt={img.alt} className={`${id === 3 ? 'xl:max-h-118' : ''} object-cover object-center h-full w-full`} /> }
         {id === 3 && <img src={divider} alt="decorative divider" className="hidden md:block absolute md:w-12 lg:w-12.5 top-0 md:right-0 lg:-right-6.25 h-full"/>}
         {id === 3 && <img src={dividersm} alt="decorative divider" className="md:hidden absolute -bottom-2 w-full"/>}
       </div>
-    </section> 
-    
+    </section>  
   )
 }
 
