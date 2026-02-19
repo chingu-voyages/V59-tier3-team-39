@@ -18,8 +18,9 @@ const FeatureSection = ({id, sectionHeading, content, img, button}: FeatureProps
           }
           <img src={underline} alt="" className="-ml-4 max-w-75.5 md:max-w-87.25 lg:max-w-99 xl:max-w-none" />
         </div>
+        <div className="space-y-6">
         {content.map(section => (
-          <div key={section.lead} className="md:space-y-1 xl:space-y-2 mb-4">
+          <div key={section.lead} className="md:space-y-1 xl:space-y-2">
             {section.heading && (
               <h3 className={`${id === 2 ? 'md:text-lg xl:text-2xl' : 'text-xl'} text-secondary-base font-bold leading-[1.35] md:leading-[1.15]`}>
                 {section.heading}
@@ -31,6 +32,7 @@ const FeatureSection = ({id, sectionHeading, content, img, button}: FeatureProps
             </p>
           </div>
         ))}
+        </div>
         {button && <Button {...button} />}
       </div>
       <div className="relative h-full order-1 md:order-0">
