@@ -6,6 +6,7 @@ import { chinguData, solutionData } from '../data/feature'
 import CaseStudy from '../components/main/CaseStudy'
 import heroBg from '../assets/hero/heroBg.png'
 import Hero from '../components/main/Hero'
+import divider from '../assets/divider.svg'
 
 const Home = () => {
   return (
@@ -17,10 +18,13 @@ const Home = () => {
           <Hero />
         </div>
       </div>
-      <div className='max-w-7xl mx-auto'>
-        
+      <div className='relative'>
+        <div className='max-w-7xl mx-auto'>
           <FeatureSection {...solutionData}/>
-      </div>  
+        </div>  
+        <img src={divider} className="hidden md:block absolute -bottom-1 h-4 text-[#F6FAFE]"/>
+      </div>
+      
       <div className='bg-primary-bg-gradient-section'>
         <div className='max-w-7xl mx-auto'>
           <TargetedRoles/>

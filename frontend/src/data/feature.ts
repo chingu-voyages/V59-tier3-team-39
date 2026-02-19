@@ -1,6 +1,6 @@
 
 import solutionBg from '../assets/solution/solutionbg.png'
-import chinguImg from '../assets/homeImages/chinguImg.png'
+import chinguImg from '../assets/chingu/chingu.png'
 
 type FeatureContent = {
     heading?: string
@@ -21,6 +21,7 @@ type FeatureButton = {
 }
 
 export type FeatureBlock = {
+  id: number
   sectionHeading: string
   content: FeatureContent[]
   img?: FeatureImg
@@ -28,6 +29,7 @@ export type FeatureBlock = {
 }
 
 export const heroData: FeatureBlock = {
+  id: 1,
   sectionHeading: "Don't make your mistakes in front of a recruiter!",
   content: [
     {
@@ -47,7 +49,8 @@ export const heroData: FeatureBlock = {
 }
 
 export const solutionData: FeatureBlock = {
-  sectionHeading: "Interviewing is a skill.",
+  id: 2,
+  sectionHeading: "INTERVIEWING IS A ",
   content: [
     {
       heading: "You wouldn’t ship first-draft code to production.",
@@ -67,7 +70,8 @@ export const solutionData: FeatureBlock = {
 }
 
 export const chinguData: FeatureBlock = {
-  sectionHeading: "Build with us.",
+  id: 3,
+  sectionHeading: "Build with us",
   content: [
     {
       heading: "Where the Voyage Begins",
