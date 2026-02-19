@@ -17,13 +17,16 @@ const FeatureSection = ({id, sectionHeading, content, img, button}: FeatureProps
           {
             id === 2 ? 
             <h2 className="text-2xl md:text-[1.75rem] lg:text-[2rem] xl:text-4xl">{sectionHeading}<span className="text-primary-tint">SKILL</span></h2>
-            : <h2 className="text-2xl lg:text-[1.75rem] xl:text-[2rem]">{sectionHeading}</h2>
+            : <h2 className="text-2xl lg:text-[1.75rem] xl:text-[2rem] text-center md:text-start">{sectionHeading}</h2>
           }
-          <img 
-            src={id === 3 ? underlineSm : underline} 
-            alt="" 
-            className={`${id === 3 ? 'xl:max-w-none lg:max-w-45 max-w-39 -ml-3.5' : 'max-w-75.5 md:max-w-87.25 lg:max-w-99 xl:max-w-none -ml-4'}`} 
-          />
+          <div className="flex justify-center md:justify-start">
+            <img 
+              src={id === 3 ? underlineSm : underline} 
+              alt="" 
+              className={`${id === 3 ? 'xl:max-w-none lg:max-w-45 max-w-39 -ml-3.5' : 'max-w-75.5 md:max-w-87.25 lg:max-w-99 xl:max-w-none -ml-4'}`} 
+            />
+          </div>
+          
         </div>
         <div className={`${id === 3 ? 'space-y-5 md:space-y-4 mb-5 md:mb-4' : 'space-y-4 lg:space-y-6'}`}>
         {content.map(section => (
