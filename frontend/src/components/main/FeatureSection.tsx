@@ -18,7 +18,7 @@ const FeatureSection = ({id, sectionHeading, content, img, button}: FeatureProps
           }
           <img src={underline} alt="" className="-ml-4 max-w-75.5 md:max-w-87.25 lg:max-w-99 xl:max-w-none" />
         </div>
-        <div className="space-y-6">
+        <div className="space-y-4 lg:space-y-6">
         {content.map(section => (
           <div key={section.lead} className="md:space-y-1 xl:space-y-2">
             {section.heading && (
