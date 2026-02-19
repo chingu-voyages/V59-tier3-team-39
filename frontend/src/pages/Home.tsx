@@ -24,7 +24,6 @@ const Home = () => {
         </div>  
         <img src={divider} className="hidden md:block absolute -bottom-1 h-4 text-[#F6FAFE]"/>
       </div>
-      
       <div className='bg-primary-bg-gradient-section'>
         <div className='max-w-7xl mx-auto'>
           <TargetedRoles/>
@@ -34,7 +33,13 @@ const Home = () => {
         <section className="flex justify-center w-full">
           <CaseStudy />
         </section>
-        <FeatureSection {...chinguData} />
+      <div className='bg-primary-bg-gradient-section'>
+        <div className='max-w-7xl mx-auto'>
+          <FeatureSection {...chinguData} />
+        </div>
+        
+      </div>
+        
         
         
         {/* <section className="flex justify-center w-full">

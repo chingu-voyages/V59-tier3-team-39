@@ -90,7 +90,7 @@ export const chinguData: FeatureBlock = {
   },
   button: {
     label: 'Join the Community',
-    subLabel: 'Visit Chingu.io for more information',
+    subLabel: 'Visit Chingu.io for more information.',
     to: 'https://chingu.io',
     variant: 'blue'
   }
