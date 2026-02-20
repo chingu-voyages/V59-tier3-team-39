@@ -65,7 +65,7 @@ export const solutionData: FeatureBlock = {
   ],
   img: {
     src: solutionBg,
-    alt: 'solution image'
+    alt: 'two professionals participating in a job interview'
   }
 }
 
@@ -86,11 +86,11 @@ export const chinguData: FeatureBlock = {
   ],
   img: {
     src: chinguImg,
-    alt: 'chingu image'
+    alt: 'computer screen displaying the chingu discord channel'
   },
   button: {
     label: 'Join the Community',
-    subLabel: 'Visit Chingu.io for more information',
+    subLabel: 'Visit Chingu.io for more information.',
     to: 'https://chingu.io',
     variant: 'blue'
   }
