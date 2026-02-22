@@ -33,11 +33,9 @@ const InterviewLayout = () => {
         restart: interview.handleRestart,
       }}
     >
-      <div className="flex flex-col min-h-screen">
+      <div className="flex flex-col">
         <Header />
-        <div className="flex-1 flex items-center justify-center overflow-hidden">
-          <Outlet />
-        </div>
+        <Outlet />
       </div>
     </InterviewContext.Provider>
   )
