@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="w-full bg-secondary-bg-gradient-a border-t-[3px] border-secondary-base/10 flex items-center justify-start px-8 h-24"></footer>
+    <footer className="bg-secondary bg-gradient-a border-t-[3px] border-secondary-base/10 flex items-center justify-start px-2 md:px-48 py-6"></footer>
   )
 }
 
