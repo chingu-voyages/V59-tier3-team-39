@@ -16,9 +16,9 @@ const QuestionScreen = () => {
   const questionNumber = currentQuestionIndex + 1
 
   return (
-    <div className="flex flex-col items-center justify-between h-[calc(100vh-88px)] md:h-[calc(100vh-110px)]">
+    <div className="flex flex-col items-center justify-between h-[calc(100vh-88px)] md:h-[calc(100vh-110px)] bg-primary-bg-gradient-section">
       <div className="flex gap-8 flex-col grow min-w-full md:min-w-175 items-center justify-center h-screen px-2 md:px-0">
-        <div className="flex-flex-col gap-2 md:min-w-175 self-start">
+        <div className="flex-flex-col gap-2 md:min-w-175 self-start px-4">
           <h1 className="text-xl md:text-2xl font-bold text-secondary-shade">
             <span className="text-secondary-tint">{questionNumber}.</span>{' '}
             {currentQuestion.text}

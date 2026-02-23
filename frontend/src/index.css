@@ -81,6 +81,15 @@
     )
   }
 
+  .bg-team-bg-gradient {
+    background-image: linear-gradient(
+      to bottom,
+      #f0ebe6 0%,
+      #efeae4 83%,
+      #ebe6e0 100%
+    );
+  }
+
   @keyframes fade-in {
     from {
       opacity: 0;

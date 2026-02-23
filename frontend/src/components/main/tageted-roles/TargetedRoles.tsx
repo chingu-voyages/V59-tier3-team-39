@@ -58,19 +58,18 @@ const TargetedRoles = () => {
   const [isActive, setIsActive] = useState(0)
 
   return (
-    <section className="flex flex-col mb-6 items-center">
+    <section className="flex flex-col items-center">
       <div role='tablist' className="md:hidden flex justify-center">
         {roleData.map((card, index) => (
           <div 
             key={card.title.role}
             role='tab'
             aria-selected={index === isActive}
-
             onClick={() => setIsActive(index)} 
             className={`
-              min-w-30 flex flex-col z-10 -mb-px px-3.75 py-1.75 font-bold leading-[1.10] border-t border-r 
-              ${index === isActive ? 'bg-primary-bg-gradient-active' : 'bg-primary-bg-gradient'} ${card.title.role === 'Web' ? 'border-l': 'border-l-0'} 
-              rounded-t-lg border-primary-stroke-tint cursor-pointer
+              min-w-30 flex flex-col z-10 -mb-px px-3.75 py-1.75 font-bold leading-[1.10] border-t border-r rounded-t-lg border-primary-stroke-tint cursor-pointer
+              ${index === isActive ? 'bg-primary-bg-gradient-active' : 'bg-primary-bg-gradient'} 
+              ${card.title.role === 'Web' ? 'border-l': 'border-l-0'} 
             `}
           >
             <span>{card.title.role}</span>

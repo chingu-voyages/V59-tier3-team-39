@@ -33,7 +33,7 @@ const InterviewLayout = () => {
         restart: interview.handleRestart,
       }}
     >
-      <div className="flex flex-col">
+      <div className="flex flex-col bg-[#f6fafe]">
         <Header />
         <Outlet />
       </div>

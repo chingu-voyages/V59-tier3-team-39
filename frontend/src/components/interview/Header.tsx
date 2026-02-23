@@ -1,22 +1,22 @@
 import { Link } from 'react-router-dom'
-import { RiCloseLargeLine } from 'react-icons/ri'
 import Logo from '../../assets/logo.svg'
 import { useInterviewContext } from '../../context/InterviewContext'
+import { IoClose } from 'react-icons/io5'
 
 const Header = () => {
   const { isInterviewStarted, currentQuestionIndex, totalQuestions } =
     useInterviewContext()
 
   return (
-    <header className="bg-secondary-bg-gradient-a rounded-b-4xl border-b-[6px] border-secondary-base/10 inset-x-0 top-0 py-5">
-      <nav className="w-13/14 mx-auto flex flex-col gap-4">
+    <header className="bg-secondary-bg-gradient-a rounded-b-4xl border-b-[6px] border-secondary-base/10 inset-x-0 top-0 pt-3 pb-2.5">
+      <nav className="max-w-7xl mx-auto flex flex-col gap-4 px-4.5 md:px-10.5 lg:px-12">
         <div className="flex justify-between items-center">
-          <Link to="/" className="max-w-28 md:max-w-max">
-            <img src={Logo} alt="Debug Your Interview logo" />
+          <Link to="/" className="max-w-max">
+            <img src={Logo} alt="Debug Your Interview logo" className='h-12 md:h-15' />
           </Link>
 
           {isInterviewStarted && totalQuestions > 0 ? (
-            <div className="flex justify-center gap-3">
+            <div className="flex justify-center gap-2.25">
               {Array.from({ length: totalQuestions }).map((_, index) => {
                 const step = index + 1
                 const isActive = step === currentQuestionIndex + 1
@@ -51,8 +51,8 @@ const Header = () => {
             </span>
           )}
 
-          <Link to="/" className="py-1 px-1.5">
-            <RiCloseLargeLine size={24} color="#8C6239" />
+          <Link to="/">
+            <IoClose color="#8C6239" size={26} className='md:ml-39' />
           </Link>
         </div>
       </nav>

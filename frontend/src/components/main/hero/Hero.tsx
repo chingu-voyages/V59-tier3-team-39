@@ -1,6 +1,8 @@
-import { heroData } from "../../data/feature"
-import Button from "../button/Button"
+import { heroData } from "../../../data/feature"
+import Button from "../../button/Button"
+
 import Card from "./Card"
+
 
 
 
