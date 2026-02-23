@@ -38,7 +38,7 @@ const Home = () => {
       <section className="flex justify-center w-full">
         <MeetOurTeam />
       </section>
-      <section className="flex justify-center w-full">
+      <section className="">
         <CaseStudy />
       </section>
       <FeatureSection {...chinguData} />
