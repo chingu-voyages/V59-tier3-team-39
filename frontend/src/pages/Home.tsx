@@ -35,13 +35,15 @@ const Home = () => {
           <TargetedRoles />
         </div>
       </div>
-      <div className='relative'>
+      <div className='relative overflow-x-hidden'>
         <div className="max-w-7xl mx-auto">
           <MeetOurTeam />
-          <svg className="absolute h-4 w-full scale-y-[-1] -top-1 block" viewBox="0 0 1440 14" fill="none" preserveAspectRatio="none">
-            <path d="M718.875 0C1272.38 0 1440 10.4262 1440 10.4262V12H0V10.4262C0 10.4262 165.375 0 718.875 0Z" fill="#eaf3fd"/>
-            <path d="M718.875 1.50073C1272.38 1.50073 1440 11.596 1440 11.596V13.5007H0V11.596C0 11.596 165.375 1.50073 718.875 1.50073Z" fill="#eaf3fd"/>
-          </svg>
+          <div className="absolute left-0 right-0 -top-1 overflow-x-hidden">
+            <svg className="block h-4 w-full min-w-0 max-w-full scale-y-[-1]" viewBox="0 0 1440 14" fill="none" preserveAspectRatio="none">
+              <path d="M718.875 0C1272.38 0 1440 10.4262 1440 10.4262V12H0V10.4262C0 10.4262 165.375 0 718.875 0Z" fill="#eaf3fd"/>
+              <path d="M718.875 1.50073C1272.38 1.50073 1440 11.596 1440 11.596V13.5007H0V11.596C0 11.596 165.375 1.50073 718.875 1.50073Z" fill="#eaf3fd"/>
+            </svg>
+          </div>
         </div>
       </div>
       <div className='bg-case-bg-gradient border-t-4 border-b-4 border-secondary-stroke-tint'>

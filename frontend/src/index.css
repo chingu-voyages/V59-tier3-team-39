@@ -27,6 +27,9 @@
 }
 
 @layer base {
+  html {
+    overflow-x: hidden;
+  }
   body {
     font-family: var(--font-roboto);
     color: #333333;

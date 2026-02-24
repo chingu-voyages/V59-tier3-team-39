@@ -14,7 +14,7 @@ const Hero = () => {
     <section className="relative mx-auto grid md:grid-cols-2 pt-5 md:gap-6 lg:gap-8 xl:gap-13 items-start">
       <div 
         className="
-          absolute sm:right-6 md:-right-34 md-lg:-right-38 lg:-right-12 xl:-right-8 top-100.5 sm:top-91 md:top-5 md-lg:top-11 lg:top-2 xl:top-4.5 
+          overflow-x-hidden absolute sm:right-6 md:-right-34 md-lg:-right-38 lg:-right-12 xl:-right-8 top-100.5 sm:top-91 md:top-5 md-lg:top-11 lg:top-2 xl:top-4.5 
           inset-y-0 w-full sm:w-140 md:w-143 md-lg:w-160 md-lg-x:w-173.5 lg:w-160 xl:w-173.5 pointer-events-none bg-center bg-no-repeat bg-contain z-0
           bg-[url('/images/mobileBg.png')] sm:bg-[url('/images/desktopBg.png')] md:bg-[url('/images/tabletBg.png')] md-lg:bg-[url('/images/desktopBg.png')]" 
       />
