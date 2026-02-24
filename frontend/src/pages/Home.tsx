@@ -44,10 +44,12 @@ const Home = () => {
           </svg>
         </div>
       </div>
+      <div className='bg-case-bg-gradient border-t-4 border-b-4 border-secondary-stroke-tint'>
+        <div className="max-w-7xl mx-auto">
+          <CaseStudy />
+        </div>
+      </div>
       
-      <section className="flex justify-center w-full">
-        <CaseStudy />
-      </section>
       <div className='bg-primary-bg-gradient-section'>
         <div className='max-w-7xl mx-auto'>
           <FeatureSection {...chinguData} />

@@ -142,10 +142,10 @@ const MemberCard = ({
 
 export const MeetOurTeam = (): JSX.Element => {
   return (
-    <section className="relative pt-11 lg:pt-12 xl:pt-16 w-full px-6 md:px-8">
+    <section className="relative pt-11 pb-6 md:pb-8 lg:pb-12 lg:pt-12 xl:pt-16 w-full px-6 md:px-8">
       <div 
         className="absolute top-0 -left-4 w-56 inset-0 bg-contain bg-no-repeat z-0"
-        style={{ backgroundImage: `url(${membersBg})`}}
+        style={{ backgroundImage: `url(${membersBg})` }}
       />
       <div className="relative max-w-264 mx-auto space-y-5 md:space-y-6 lg:space-y-7 xl:space-y-8 z-10">
         {/* Header */}

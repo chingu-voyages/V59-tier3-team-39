@@ -90,6 +90,15 @@
     );
   }
 
+  .bg-case-bg-gradient {
+    background-image: linear-gradient(
+      to bottom,
+      #fbfaf9 0%,
+      #fbfaf9 91%,
+      #f1edea 100%
+    );
+  }
+
   @keyframes fade-in {
     from {
       opacity: 0;

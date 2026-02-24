@@ -4,7 +4,7 @@ const ResultsScreen = () => {
   const { correctAnswersCount, totalQuestions, restart } = useInterviewContext()
 
   return (
-    <div className="flex flex-col h-[calc(100vh-88px)] md:h-[calc(100vh-110px) bg-primary-bg-gradient-section">
+    <div className="flex flex-col h-[calc(100vh-76px)] md:h-[calc(100vh-89px)] bg-primary-bg-gradient-section">
       <div className="flex-1 flex items-center justify-center px-2 md:px-0">
         <div className="w-full max-w-lg">
           <div className="flex flex-col justify-center items-center gap-4">
