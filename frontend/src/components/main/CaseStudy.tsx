@@ -7,7 +7,7 @@ import caseBg from '../../assets/caseStudy/casebg.png'
 
 const CaseStudy = () => {
   return (
-    <section className='relative'>
+    <section className='relative overflow-x-hidden md:overflow-x-visible'>
       <div 
         style={{backgroundImage: `url(${caseBg})`}}
         className='absolute top-7 md:top-14 xl:top-20 -right-50 md:-right-38 xl:-right-35 w-72 h-91 bg-contain bg-no-repeat z-0'
