@@ -1,12 +1,12 @@
 import React from 'react'
 
-import HeroIllustration from '../../assets/caseStudy/Hero Illustration.png'
-import CorrectAnswerIllustration from '../../assets/caseStudy/Correct Answer Illustration.png'
-import AIChatIllustration from '../../assets/caseStudy/AI Chat Illustration.png'
+import HeroIllustration from '../../assets/caseStudy/Hero Illustration.avif'
+import CorrectAnswerIllustration from '../../assets/caseStudy/Correct Answer Illustration.avif'
+import AIChatIllustration from '../../assets/caseStudy/AI Chat Illustration.avif'
 import Tack1 from '../../assets/caseStudy/Tack 1.png'
 import Tack2 from '../../assets/caseStudy/Tack 2.png'
 import Tack3 from '../../assets/caseStudy/Tack 3.png'
-import CardBoardBg from '../../assets/caseStudy/Chingu Discord.png'
+import CardBoardBg from '../../assets/caseStudy/Chingu Discord.avif'
 
 interface CaseStudyCard {
   id: number

@@ -1,6 +1,6 @@
 
-import solutionBg from '../assets/solution/solutionbg.png'
-import chinguImg from '../assets/chingu/chingu.png'
+import solutionBg from '../assets/solution/solutionbg.avif'
+import chinguImg from '../assets/chingu/chingu.avif'
 
 type FeatureContent = {
     heading?: string

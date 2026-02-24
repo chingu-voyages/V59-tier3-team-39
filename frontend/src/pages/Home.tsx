@@ -3,7 +3,7 @@ import FeatureSection from '../components/main/FeatureSection'
 import TargetedRoles from '../components/main/tageted-roles/TargetedRoles'
 import { chinguData, solutionData } from '../data/feature'
 import CaseStudy from '../components/main/CaseStudy'
-import heroBg from '../assets/hero/heroBg.png'
+import heroBg from '../assets/hero/heroBg.avif'
 import Hero from '../components/main/hero/Hero'
 import divider from '../assets/divider.svg'
 
