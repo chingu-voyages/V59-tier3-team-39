@@ -1,34 +1,32 @@
-import Button from "../button/Button"
-import confetti from '../../assets/roles/confetti.svg'
 
-type RoleButton = {
-  label: string
-  subLabel: string
-  to: string
-  variant: 'light'
-}
-
-type Content = {
-  lead: string
-  body: string
-}
-
-type Title = {
-  role: string
-  type: string
-}
+import confetti from '../../../assets/roles/confetti.svg'
+import Button from '../../button/Button'
 
 type RoleProps = {
-  title: Title
-  content: Content
-  button: RoleButton
+  title: {
+    role: string
+    type:string
+  }
+  content: {
+    lead: string
+    body:string
+  }
+  button: {
+    label: string
+    subLabel: string
+    to: string
+    variant: 'light'
+  }
 }
 
 const Role = ({title, content, button}: RoleProps) => {
+
   return (
     <div className="md:max-w-65 lg:min-w-73.5 xl:max-w-89.5">
       <div className={`md:space-y-1 mb-12 md:mb-10 ${title.role === 'Python' ? 'xl:mb-15.5' : ''} ${title.role === 'UX' ? 'mt-0': 'md:mt-6'}`}>
-        <h2 className="hidden md:block text-xl lg:text-2xl xl:text-[1.75rem] font-bold leading-[1.15]">{title.role}<span className="text-secondary-base"> {title.type}</span></h2>
+        <h2 className="hidden md:block text-xl lg:text-2xl xl:text-[1.75rem] font-bold leading-[1.15]">
+          {title.role}<span className="text-secondary-base"> {title.type}</span>
+        </h2>
         <p className="sm:text-center md:text-start text-sm lg:text-base xl:text-lg leading-[1.35]">
           <span className="font-bold">{content.lead}</span> <span>{content.body}</span>
         </p>
@@ -45,7 +43,7 @@ const Role = ({title, content, button}: RoleProps) => {
           <div className={`flex justify-between items-center ${title.role === 'UX' ? 'order-2' : 'order-0'} h-14 px-3.25 rounded-lg bg-success-base border-3 border-success-stroke`}>
             <p className="font-medium text-white">The right answer.</p>
             <div className="p-1.5 bg-white/15 rounded-lg">
-              <img className="w-5" src={confetti} alt="" />
+              <img className="w-5" src={confetti} alt="a confetti icon" />
             </div>
           </div>
           <div className="h-14 flex justify-between items-center px-3.25 rounded-lg bg-primary-tint border-3 border-[#D7D7D7]/30">

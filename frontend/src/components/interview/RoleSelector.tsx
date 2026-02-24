@@ -10,9 +10,9 @@ const RoleSelector = () => {
   ]
 
   return (
-    <div className="flex flex-col items-center justify-between h-[calc(100vh-88px)] md:h-[calc(100vh-110px)]">
+    <div className="flex flex-col items-center justify-between h-[calc(100vh-76px)] md:h-[calc(100vh-89px)] bg-primary-bg-gradient-section">
       <div className="flex gap-8 flex-col grow items-center justify-center h-screen px-2 md:px-0">
-        <div className="flex-flex-col gap-2">
+        <div className="flex-flex-col gap-2 px-4">
           <h1 className="text-xl md:text-2xl font-bold text-secondary-shade">
             Please choose a role:
           </h1>

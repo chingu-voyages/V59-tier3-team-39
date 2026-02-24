@@ -1,20 +1,20 @@
-import underlinesm from '../../assets/Underlinesm.png'
+import underline from '../../assets/caseStudy/underlinecase.png'
 
 export const Header: React.FC = () => {
   return (
-    <header className="w-full px-6 pt-12 md:pt-16 pb-12">
-      <div className="max-w-4xl mx-auto text-center space-y-4">
+    <header className="pt-6 md:pt-8 px-6">
+      <div className="max-w-4xl mx-auto space-y-2 xl:space-y-4">
         <div className="flex flex-col justify-center items-center">
-          <h1 className="text-2xl lg:text-[1.75rem] xl:text-[2rem] font-bold">
+          <h2 className="text-2xl lg:text-[1.75rem] xl:text-[2rem] font-bold leading-[1.15]">
             Like what you see?
-          </h1>
+          </h2>
           <img
-            src={underlinesm}
+            src={underline}
             alt=""
-            className="max-w-75.5 md:max-w-87.25 lg:max-w-99 xl:max-w-none -ml-4"
+            className="max-w-55 lg:max-w-95 xl:w-73 -ml-4"
           />
         </div>
-        <p className="text-base md:text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">
+        <p className="text-sm lg:text-base leading-[1.35] max-w-160 mx-auto">
           We'd love to share our journey with you. Check out the full{' '}
           <a
             href="#"

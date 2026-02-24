@@ -4,6 +4,7 @@ import HeroIllustration from '../../assets/caseStudy/Hero Illustration.png'
 import CorrectAnswerIllustration from '../../assets/caseStudy/Correct Answer Illustration.png'
 import AIChatIllustration from '../../assets/caseStudy/AI Chat Illustration.png'
 import Tack from '../../assets/caseStudy/Tack 2.png'
+import Button from '../button/Button'
 
 interface CarouselCard {
   id: number
@@ -116,6 +117,13 @@ export const CaseStudyCarousel: React.FC = () => {
             ))}
           </div>
         </div>
+        <div className="w-fit mt-5 mx-auto">
+              <Button
+                label="Read the full case study"
+                subLabel="User journeys, wireflows, prototypes, and more."
+                to="/casestudy"
+              />
+            </div>
 
         {/* Dot Indicators */}
         <div className="flex justify-center items-center gap-2 mt-6">

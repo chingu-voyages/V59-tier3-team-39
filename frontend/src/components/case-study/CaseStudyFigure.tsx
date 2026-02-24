@@ -1,10 +1,12 @@
 import React from 'react'
 
-import HeroIllustration from '../../assets/caseStudy/Hero Illustration.png'
-import CorrectAnswerIllustration from '../../assets/caseStudy/Correct Answer Illustration.png'
-import AIChatIllustration from '../../assets/caseStudy/AI Chat Illustration.png'
-import Tack from '../../assets/caseStudy/Tack 2.png'
-import CardBoardBg from '../../assets/caseStudy/Chingu Discord.png'
+import HeroIllustration from '../../assets/caseStudy/Hero Illustration.avif'
+import CorrectAnswerIllustration from '../../assets/caseStudy/Correct Answer Illustration.avif'
+import AIChatIllustration from '../../assets/caseStudy/AI Chat Illustration.avif'
+import Tack1 from '../../assets/caseStudy/Tack 1.png'
+import Tack2 from '../../assets/caseStudy/Tack 2.png'
+import Tack3 from '../../assets/caseStudy/Tack 3.png'
+import CardBoardBg from '../../assets/caseStudy/Chingu Discord.avif'
 
 interface CaseStudyCard {
   id: number
@@ -37,43 +39,38 @@ const cardsData: CaseStudyCard[] = [
 export const CaseStudyFigure: React.FC = () => {
   return (
     <figure
-      className="w-full h-full min-h-100 md:min-h-125 lg:min-h-150 rounded-3xl p-6 md:p-8 lg:p-12 relative overflow-hidden"
+      className="rounded-4xl md:px-5 md:py-7 xl:p-7 border-4 border-[#EEEDED]"
       style={{
         backgroundImage: `url(${CardBoardBg})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        backgroundRepeat: 'repeat',
+        backgroundRepeat: 'no-repeat',
       }}
     >
       {/* Cards Container */}
       <div
-        className="relative h-full w-full flex flex-col justify-between md:justify-evenly lg:justify-between gap-8 md:gap-10 lg:gap-12"
+        className="relative flex flex-col gap-6.5"
         style={{ zIndex: 2 }}
       >
         {/* Card 1 - Desktop: top-left, Tablet: centered */}
         <div className="w-full flex lg:justify-start md:justify-center">
-          <div className="relative w-full md:w-[95%] lg:w-[85%]">
+          <div className="relative">
             {/* Red Tack Pin */}
             <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 z-10">
               <img
-                src={Tack}
+                src={Tack1}
                 alt="Push pin"
-                className="w-8 h-8 md:w-10 md:h-10"
+                className="w-7 h-10"
               />
             </div>
 
             {/* Card */}
-            <div
-              className="bg-white rounded-2xl shadow-lg overflow-hidden"
-              style={{
-                border: '6px solid #C49A6C',
-              }}
-            >
-              <div className="p-1">
+            <div>
+              <div className="">
                 <img
                   src={cardsData[0].image}
                   alt={cardsData[0].imageAlt}
-                  className="w-full h-48 md:h-56 lg:h-64 object-contain rounded-lg"
+                  className="w-80 shadow-2xl"
                 />
               </div>
             </div>
@@ -81,29 +78,24 @@ export const CaseStudyFigure: React.FC = () => {
         </div>
 
         {/* Card 2 - Desktop: center-right, Tablet: centered */}
-        <div className="w-full flex lg:justify-end md:justify-center lg:pr-12">
-          <div className="relative w-full md:w-[95%] lg:w-[85%]">
+        <div className="w-full flex lg:justify-end md:justify-center">
+          <div className="relative">
             {/* Red Tack Pin */}
             <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 z-10">
               <img
-                src={Tack}
+                src={Tack2}
                 alt="Push pin"
-                className="w-8 h-8 md:w-10 md:h-10"
+                className="w-8 h-9"
               />
             </div>
 
             {/* Card */}
-            <div
-              className="bg-white rounded-2xl shadow-lg overflow-hidden"
-              style={{
-                border: '6px solid #C49A6C',
-              }}
-            >
-              <div className="p-1">
+            <div>
+              <div className="">
                 <img
                   src={cardsData[1].image}
                   alt={cardsData[1].imageAlt}
-                  className="w-full h-48 md:h-56 lg:h-64 object-contain rounded-lg"
+                  className="w-80 shadow-2xl"
                 />
               </div>
             </div>
@@ -111,29 +103,24 @@ export const CaseStudyFigure: React.FC = () => {
         </div>
 
         {/* Card 3 - Desktop: bottom-left, Tablet: centered */}
-        <div className="w-full flex lg:justify-start md:justify-center lg:pl-8">
-          <div className="relative w-full md:w-[95%] lg:w-[85%]">
+        <div className="w-full flex lg:justify-start md:justify-center">
+          <div className="relative">
             {/* Red Tack Pin */}
             <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 z-10">
               <img
-                src={Tack}
+                src={Tack3}
                 alt="Push pin"
-                className="w-8 h-8 md:w-10 md:h-10"
+                className="w-7 h-10"
               />
             </div>
 
             {/* Card */}
-            <div
-              className="bg-white rounded-2xl shadow-lg overflow-hidden"
-              style={{
-                border: '6px solid #C49A6C',
-              }}
-            >
+            <div>
               <div className="p-1">
                 <img
                   src={cardsData[2].image}
                   alt={cardsData[2].imageAlt}
-                  className="w-full h-48 md:h-56 lg:h-64 object-contain rounded-lg"
+                  className="w-80 shadow-2xl"
                 />
               </div>
             </div>
