@@ -16,7 +16,7 @@ class QuestionSerializer(serializers.ModelSerializer):
     
     class Meta:
         model = Question
-        fields = ['id', 'text', 'options', 'correctOptionId']
+        fields = ['id', 'text', 'hint', 'options', 'correctOptionId']
 
 
 class RoleSerializer(serializers.ModelSerializer):

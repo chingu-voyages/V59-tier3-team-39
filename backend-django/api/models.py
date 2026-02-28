@@ -9,6 +9,7 @@ class Role(models.Model):
 class Question(models.Model):
     id = models.CharField(max_length=50, primary_key=True)
     text = models.TextField()
+    hint = models.TextField(blank=True, default='')
     correct_option_id = models.CharField(max_length=10)
     role = models.ForeignKey(Role, on_delete=models.CASCADE, related_name='questions')
 
