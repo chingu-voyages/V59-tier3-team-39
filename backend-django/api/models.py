@@ -17,4 +17,5 @@ class Question(models.Model):
 class Option(models.Model):
     option_id = models.CharField(max_length=10)
     text = models.TextField()
+    feedback = models.TextField(blank=True, default='')
     question = models.ForeignKey(Question, on_delete=models.CASCADE, related_name='options')
