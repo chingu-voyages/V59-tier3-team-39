@@ -7,7 +7,7 @@ class OptionSerializer(serializers.ModelSerializer):
     
     class Meta:
         model = Option
-        fields = ['id', 'text']
+        fields = ['id', 'text', 'feedback']
 
 
 class QuestionSerializer(serializers.ModelSerializer):
