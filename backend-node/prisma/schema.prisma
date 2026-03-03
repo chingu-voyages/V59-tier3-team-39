@@ -1,0 +1,38 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Role {
+  id        String     @id @db.VarChar(50)
+  name      String     @db.VarChar(100)
+  questions Question[]
+
+  @@map("api_role")
+}
+
+model Question {
+  id                String   @id @db.VarChar(50)
+  text              String
+  hint              String   @default("")
+  correct_option_id String   @db.VarChar(10)
+  role_id           String   @db.VarChar(50)
+  role              Role     @relation(fields: [role_id], references: [id], onDelete: Cascade)
+  options           Option[]
+
+  @@map("api_question")
+}
+
+model Option {
+  id          Int      @id @default(autoincrement())
+  option_id   String   @db.VarChar(10)
+  text        String
+  feedback    String   @default("")
+  question_id String   @db.VarChar(50)
+  question    Question @relation(fields: [question_id], references: [id], onDelete: Cascade)
+
+  @@map("api_option")
+}
