@@ -1,118 +1,149 @@
 {
   "roles": [
     {
-      "id": "product-owner",
-      "name": "Product Owner",
-      "questions": [
-        {
-          "id": "po-q1",
-          "text": "What is the Product Owner primarily responsible for?",
-          "options": [
-            { "id": "A", "text": "Writing code" },
-            { "id": "B", "text": "Managing the product backlog" },
-            { "id": "C", "text": "Managing HR" },
-            { "id": "D", "text": "Setting infrastructure" }
-          ],
-          "correctOptionId": "B"
-        },
-        { "id": "po-q2", "text": "Which artifact does the PO own?", "options": [
-            { "id": "A", "text": "Sprint Backlog" },
-            { "id": "B", "text": "Definition of Done" },
-            { "id": "C", "text": "Product Backlog" },
-            { "id": "D", "text": "CI/CD pipeline" }
-          ], "correctOptionId": "C" },
-        { "id": "po-q3", "text": "MVP stands for:", "options": [
-            { "id": "A", "text": "Most Valuable Person" },
-            { "id": "B", "text": "Minimum Viable Product" },
-            { "id": "C", "text": "Maximum Value Plan" },
-            { "id": "D", "text": "Multi-Version Plan" }
-          ], "correctOptionId": "B" },
-        { "id": "po-q4", "text": "When prioritizing backlog, PO should consider:", "options": [
-            { "id": "A", "text": "Developer preference" },
-            { "id": "B", "text": "Customer value" },
-            { "id": "C", "text": "Commitment date only" },
-            { "id": "D", "text": "Oldest items first" }
-          ], "correctOptionId": "B" },
-        { "id": "po-q5", "text": "A good user story includes:", "options": [
-            { "id": "A", "text": "Acceptance criteria" },
-            { "id": "B", "text": "Full implementation plan" },
-            { "id": "C", "text": "Server config" },
-            { "id": "D", "text": "Marketing budget" }
-          ], "correctOptionId": "A" }
-      ]
-    },
-
-    {
-      "id": "scrum-master",
-      "name": "Scrum Master",
-      "questions": [
-        { "id": "sm-q1", "text": "A Scrum Master should:", "options": [
-            { "id": "A", "text": "Assign tasks to devs" },
-            { "id": "B", "text": "Remove impediments" },
-            { "id": "C", "text": "Approve design" },
-            { "id": "D", "text": "Set product roadmap" }
-          ], "correctOptionId": "B" },
-        { "id": "sm-q2", "text": "Daily Scrum recommended timebox:", "options": [
-            { "id": "A", "text": "15 minutes" },
-            { "id": "B", "text": "45 minutes" },
-            { "id": "C", "text": "1 hour" },
-            { "id": "D", "text": "No limit" }
-          ], "correctOptionId": "A" },
-        { "id": "sm-q3", "text": "Sprint Review is for:", "options": [
-            { "id": "A", "text": "Inspecting the increment with stakeholders" },
-            { "id": "B", "text": "Planning next sprint tasks" },
-            { "id": "C", "text": "Daily status updates" },
-            { "id": "D", "text": "Code reviews" }
-          ], "correctOptionId": "A" },
-        { "id": "sm-q4", "text": "If team faces blockers, Scrum Master should:", "options": [
-            { "id": "A", "text": "Ignore them" },
-            { "id": "B", "text": "Help remove them" },
-            { "id": "C", "text": "Extend sprint length" },
-            { "id": "D", "text": "Replace the team" }
-          ], "correctOptionId": "B" },
-        { "id": "sm-q5", "text": "Servant leadership means:", "options": [
-            { "id": "A", "text": "Directing every task" },
-            { "id": "B", "text": "Supporting team autonomy" },
-            { "id": "C", "text": "Doing everyone’s work" },
-            { "id": "D", "text": "Enforcing overtime" }
-          ], "correctOptionId": "B" }
-      ]
-    },
-
-    {
       "id": "ui-ux-designer",
       "name": "UI/UX Designer",
       "questions": [
-        { "id": "ux-q1", "text": "Wireframe shows:", "options": [
-            { "id": "A", "text": "Final visuals" },
-            { "id": "B", "text": "Layout and structure" },
-            { "id": "C", "text": "Server endpoints" },
-            { "id": "D", "text": "Unit tests" }
-          ], "correctOptionId": "B" },
-        { "id": "ux-q2", "text": "Good accessible color choice requires:", "options": [
-            { "id": "A", "text": "High contrast" },
-            { "id": "B", "text": "Many similar hues" },
-            { "id": "C", "text": "Color only to convey meaning" },
-            { "id": "D", "text": "Tiny fonts" }
-          ], "correctOptionId": "A" },
-        { "id": "ux-q3", "text": "Persona is:", "options": [
-            { "id": "A", "text": "A fictional target user" },
-            { "id": "B", "text": "A design tool" },
-            { "id": "C", "text": "A database schema" },
-            { "id": "D", "text": "A CSS framework" }
-          ], "correctOptionId": "A" },
-        { "id": "ux-q4", "text": "Best method to validate flows with users:", "options": [
-            { "id": "A", "text": "Usability testing" },
-            { "id": "B", "text": "Unit tests" },
-            { "id": "C", "text": "Load testing" },
-            { "id": "D", "text": "Linting" }
-          ], "correctOptionId": "A" },
-        { "id": "ux-q5", "text": "Visual hierarchy draws attention to:", "options": [
-            { "id": "A", "text": "Largest/most contrasted element" },
-            { "id": "B", "text": "Small hidden text" },
-            { "id": "C", "text": "Footer only" },
-            { "id": "D", "text": "All elements equally" }
-          ], "correctOptionId": "A" }
+        {
+          "id": "ux-q1",
+          "text": "Wireframe shows:",
+          "hint": "Think about early-stage design before final visuals.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Final visuals",
+              "feedback": "Final visuals come later in mockups or prototypes."
+            },
+            {
+              "id": "B",
+              "text": "Layout and structure",
+              "feedback": "Wireframes focus on layout and structure before visual details."
+            },
+            {
+              "id": "C",
+              "text": "Server endpoints",
+              "feedback": "Endpoints are a backend concern, not a design artifact."
+            },
+            {
+              "id": "D",
+              "text": "Unit tests",
+              "feedback": "Unit tests verify code behavior, not design."
+            }
+          ],
+          "correctOptionId": "B"
+        },
+        {
+          "id": "ux-q2",
+          "text": "Good accessible color choice requires:",
+          "hint": "Readability matters for users with vision differences.",
+          "options": [
+            {
+              "id": "A",
+              "text": "High contrast",
+              "feedback": "High contrast ensures text is readable for all users."
+            },
+            {
+              "id": "B",
+              "text": "Many similar hues",
+              "feedback": "Similar hues reduce readability, especially for color-blind users."
+            },
+            {
+              "id": "C",
+              "text": "Color only to convey meaning",
+              "feedback": "Relying on color alone excludes users who can't distinguish colors."
+            },
+            {
+              "id": "D",
+              "text": "Tiny fonts",
+              "feedback": "Tiny fonts hurt readability and accessibility."
+            }
+          ],
+          "correctOptionId": "A"
+        },
+        {
+          "id": "ux-q3",
+          "text": "Persona is:",
+          "hint": "It represents a type of user, not a tool.",
+          "options": [
+            {
+              "id": "A",
+              "text": "A fictional target user",
+              "feedback": "Personas are fictional profiles representing target user groups."
+            },
+            {
+              "id": "B",
+              "text": "A design tool",
+              "feedback": "A persona is a user archetype, not a software tool."
+            },
+            {
+              "id": "C",
+              "text": "A database schema",
+              "feedback": "Database schemas define data structure, not users."
+            },
+            {
+              "id": "D",
+              "text": "A CSS framework",
+              "feedback": "CSS frameworks handle styling, not user research."
+            }
+          ],
+          "correctOptionId": "A"
+        },
+        {
+          "id": "ux-q4",
+          "text": "Best method to validate flows with users:",
+          "hint": "It involves real people trying the product.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Usability testing",
+              "feedback": "Usability testing lets real users try the product to find flow issues."
+            },
+            {
+              "id": "B",
+              "text": "Unit tests",
+              "feedback": "Unit tests check code logic, not user experience."
+            },
+            {
+              "id": "C",
+              "text": "Load testing",
+              "feedback": "Load testing measures performance under traffic, not usability."
+            },
+            {
+              "id": "D",
+              "text": "Linting",
+              "feedback": "Linting checks code style and syntax errors."
+            }
+          ],
+          "correctOptionId": "A"
+        },
+        {
+          "id": "ux-q5",
+          "text": "Visual hierarchy draws attention to:",
+          "hint": "What stands out most on a page?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Largest/most contrasted element",
+              "feedback": "Size and contrast guide the eye to the most important content."
+            },
+            {
+              "id": "B",
+              "text": "Small hidden text",
+              "feedback": "Small text gets the least attention, not the most."
+            },
+            {
+              "id": "C",
+              "text": "Footer only",
+              "feedback": "Footers are low in the visual hierarchy by design."
+            },
+            {
+              "id": "D",
+              "text": "All elements equally",
+              "feedback": "Equal weight means no hierarchy at all."
+            }
+          ],
+          "correctOptionId": "A"
+        }
       ]
     },
 
@@ -120,36 +151,146 @@
       "id": "web-developer",
       "name": "Web Developer",
       "questions": [
-        { "id": "web-q1", "text": "Semantic element for main content:", "options": [
-            { "id": "A", "text": "<footer>" },
-            { "id": "B", "text": "<main>" },
-            { "id": "C", "text": "<nav>" },
-            { "id": "D", "text": "<aside>" }
-          ], "correctOptionId": "B" },
-        { "id": "web-q2", "text": "Center a block with fixed width:", "options": [
-            { "id": "A", "text": "margin: 0 auto;" },
-            { "id": "B", "text": "text-align: center;" },
-            { "id": "C", "text": "display: inline;" },
-            { "id": "D", "text": "float: left;" }
-          ], "correctOptionId": "A" },
-        { "id": "web-q3", "text": "CORS stands for:", "options": [
-            { "id": "A", "text": "Cross-Origin Resource Sharing" },
-            { "id": "B", "text": "Client-Origin Request Security" },
-            { "id": "C", "text": "Content-Origin Remote Setup" },
-            { "id": "D", "text": "Cross-Object Routing Service" }
-          ], "correctOptionId": "A" },
-        { "id": "web-q4", "text": "HTTP 200 means:", "options": [
-            { "id": "A", "text": "Not Found" },
-            { "id": "B", "text": "Server Error" },
-            { "id": "C", "text": "OK / Success" },
-            { "id": "D", "text": "Redirect" }
-          ], "correctOptionId": "C" },
-        { "id": "web-q5", "text": "The event loop enables:", "options": [
-            { "id": "A", "text": "Non-blocking async callbacks" },
-            { "id": "B", "text": "Multi-threaded JS by default" },
-            { "id": "C", "text": "Blocking I/O only" },
-            { "id": "D", "text": "Synchronous DOM updates only" }
-          ], "correctOptionId": "A" }
+        {
+          "id": "web-q1",
+          "text": "Semantic element for main content:",
+          "hint": "The tag name matches its purpose.",
+          "options": [
+            {
+              "id": "A",
+              "text": "<footer>",
+              "feedback": "<footer> is for bottom-of-page content like copyright info."
+            },
+            {
+              "id": "B",
+              "text": "<main>",
+              "feedback": "<main> wraps the primary content of the page."
+            },
+            {
+              "id": "C",
+              "text": "<nav>",
+              "feedback": "<nav> is for navigation links, not main content."
+            },
+            {
+              "id": "D",
+              "text": "<aside>",
+              "feedback": "<aside> is for sidebar or tangential content."
+            }
+          ],
+          "correctOptionId": "B"
+        },
+        {
+          "id": "web-q2",
+          "text": "Center a block with fixed width:",
+          "hint": "Think about auto margins.",
+          "options": [
+            {
+              "id": "A",
+              "text": "margin: 0 auto;",
+              "feedback": "Auto left/right margins center a block element with a set width."
+            },
+            {
+              "id": "B",
+              "text": "text-align: center;",
+              "feedback": "text-align centers inline content, not block elements."
+            },
+            {
+              "id": "C",
+              "text": "display: inline;",
+              "feedback": "Inline elements can't have a fixed width to center."
+            },
+            {
+              "id": "D",
+              "text": "float: left;",
+              "feedback": "Float pushes elements to one side, not the center."
+            }
+          ],
+          "correctOptionId": "A"
+        },
+        {
+          "id": "web-q3",
+          "text": "CORS stands for:",
+          "hint": "It's about requests between different domains.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Cross-Origin Resource Sharing",
+              "feedback": "CORS allows controlled access to resources across different origins."
+            },
+            {
+              "id": "B",
+              "text": "Client-Origin Request Security",
+              "feedback": "This isn't a real web standard term."
+            },
+            {
+              "id": "C",
+              "text": "Content-Origin Remote Setup",
+              "feedback": "This isn't a recognized acronym in web development."
+            },
+            {
+              "id": "D",
+              "text": "Cross-Object Routing Service",
+              "feedback": "CORS is about origins and resources, not object routing."
+            }
+          ],
+          "correctOptionId": "A"
+        },
+        {
+          "id": "web-q4",
+          "text": "HTTP 200 means:",
+          "hint": "The most common successful response.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Not Found",
+              "feedback": "Not Found is HTTP 404, not 200."
+            },
+            {
+              "id": "B",
+              "text": "Server Error",
+              "feedback": "Server errors are in the 500 range."
+            },
+            {
+              "id": "C",
+              "text": "OK / Success",
+              "feedback": "HTTP 200 means the request was successful."
+            },
+            {
+              "id": "D",
+              "text": "Redirect",
+              "feedback": "Redirects use 3xx status codes like 301 or 302."
+            }
+          ],
+          "correctOptionId": "C"
+        },
+        {
+          "id": "web-q5",
+          "text": "The event loop enables:",
+          "hint": "JS is single-threaded but handles async work.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Non-blocking async callbacks",
+              "feedback": "The event loop processes async callbacks without blocking the main thread."
+            },
+            {
+              "id": "B",
+              "text": "Multi-threaded JS by default",
+              "feedback": "JavaScript runs on a single thread; the event loop doesn't change that."
+            },
+            {
+              "id": "C",
+              "text": "Blocking I/O only",
+              "feedback": "The event loop exists specifically to avoid blocking I/O."
+            },
+            {
+              "id": "D",
+              "text": "Synchronous DOM updates only",
+              "feedback": "DOM updates can be triggered by async operations too."
+            }
+          ],
+          "correctOptionId": "A"
+        }
       ]
     },
 
@@ -157,36 +298,146 @@
       "id": "python-developer",
       "name": "Python Developer",
       "questions": [
-        { "id": "py-q1", "text": "GIL stands for:", "options": [
-            { "id": "A", "text": "Global Interpreter Lock" },
-            { "id": "B", "text": "Global Input Listener" },
-            { "id": "C", "text": "General Interface Layer" },
-            { "id": "D", "text": "Global I/O Library" }
-          ], "correctOptionId": "A" },
-        { "id": "py-q2", "text": "Which is a generator expression?", "options": [
-            { "id": "A", "text": "[x for x in range(3)]" },
-            { "id": "B", "text": "(x for x in range(3))" },
-            { "id": "C", "text": "def f(): return []" },
-            { "id": "D", "text": "lambda x: x" }
-          ], "correctOptionId": "B" },
-        { "id": "py-q3", "text": "Tool to create isolated envs:", "options": [
-            { "id": "A", "text": "venv / virtualenv" },
-            { "id": "B", "text": "npm" },
-            { "id": "C", "text": "pipx only" },
-            { "id": "D", "text": "make" }
-          ], "correctOptionId": "A" },
-        { "id": "py-q4", "text": "Result of list(map(lambda x: x*2, [1,2])):", "options": [
-            { "id": "A", "text": "[2,4]" },
-            { "id": "B", "text": "[1,2]" },
-            { "id": "C", "text": "map object" },
-            { "id": "D", "text": "[1,4]" }
-          ], "correctOptionId": "A" },
-        { "id": "py-q5", "text": "Decorators in Python:", "options": [
-            { "id": "A", "text": "Modify or wrap functions/classes" },
-            { "id": "B", "text": "Are only for type checking" },
-            { "id": "C", "text": "Are compile-time macros" },
-            { "id": "D", "text": "Disable GC" }
-          ], "correctOptionId": "A" }
+        {
+          "id": "py-q1",
+          "text": "GIL stands for:",
+          "hint": "It limits true thread parallelism in CPython.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Global Interpreter Lock",
+              "feedback": "The GIL prevents multiple threads from executing Python code simultaneously."
+            },
+            {
+              "id": "B",
+              "text": "Global Input Listener",
+              "feedback": "This isn't a real Python concept."
+            },
+            {
+              "id": "C",
+              "text": "General Interface Layer",
+              "feedback": "This term doesn't exist in CPython."
+            },
+            {
+              "id": "D",
+              "text": "Global I/O Library",
+              "feedback": "Python's I/O modules are not called GIL."
+            }
+          ],
+          "correctOptionId": "A"
+        },
+        {
+          "id": "py-q2",
+          "text": "Which is a generator expression?",
+          "hint": "Similar to a list comprehension but with different brackets.",
+          "options": [
+            {
+              "id": "A",
+              "text": "[x for x in range(3)]",
+              "feedback": "Square brackets create a list comprehension, not a generator."
+            },
+            {
+              "id": "B",
+              "text": "(x for x in range(3))",
+              "feedback": "Parentheses around a comprehension create a generator expression."
+            },
+            {
+              "id": "C",
+              "text": "def f(): return []",
+              "feedback": "This is a regular function that returns a list."
+            },
+            {
+              "id": "D",
+              "text": "lambda x: x",
+              "feedback": "A lambda is an anonymous function, not a generator."
+            }
+          ],
+          "correctOptionId": "B"
+        },
+        {
+          "id": "py-q3",
+          "text": "Tool to create isolated envs:",
+          "hint": "Python has a built-in module for this.",
+          "options": [
+            {
+              "id": "A",
+              "text": "venv / virtualenv",
+              "feedback": "venv is built into Python for creating isolated environments."
+            },
+            {
+              "id": "B",
+              "text": "npm",
+              "feedback": "npm is the Node.js package manager, not a Python tool."
+            },
+            {
+              "id": "C",
+              "text": "pipx only",
+              "feedback": "pipx installs CLI tools in isolation but isn't for project envs."
+            },
+            {
+              "id": "D",
+              "text": "make",
+              "feedback": "make is a build automation tool, not an environment manager."
+            }
+          ],
+          "correctOptionId": "A"
+        },
+        {
+          "id": "py-q4",
+          "text": "Result of list(map(lambda x: x*2, [1,2])):",
+          "hint": "The lambda doubles each element.",
+          "options": [
+            {
+              "id": "A",
+              "text": "[2,4]",
+              "feedback": "map applies x*2 to each element: 1*2=2, 2*2=4."
+            },
+            {
+              "id": "B",
+              "text": "[1,2]",
+              "feedback": "The lambda transforms values; the original list is not returned."
+            },
+            {
+              "id": "C",
+              "text": "map object",
+              "feedback": "list() converts the map object into a list."
+            },
+            {
+              "id": "D",
+              "text": "[1,4]",
+              "feedback": "Both elements are doubled, not just the second one."
+            }
+          ],
+          "correctOptionId": "A"
+        },
+        {
+          "id": "py-q5",
+          "text": "Decorators in Python:",
+          "hint": "They use @ syntax above a function.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Modify or wrap functions/classes",
+              "feedback": "Decorators wrap a function to extend or modify its behavior."
+            },
+            {
+              "id": "B",
+              "text": "Are only for type checking",
+              "feedback": "Type checking uses annotations or tools like mypy, not decorators."
+            },
+            {
+              "id": "C",
+              "text": "Are compile-time macros",
+              "feedback": "Python is interpreted; decorators run at import time, not compile time."
+            },
+            {
+              "id": "D",
+              "text": "Disable GC",
+              "feedback": "Garbage collection is managed by the gc module, not decorators."
+            }
+          ],
+          "correctOptionId": "A"
+        }
       ]
     }
   ]
