@@ -21,7 +21,7 @@ const QuestionScreen = () => {
 
   return (
     <div className="flex flex-col items-center justify-between min-h-[calc(100vh-76px)] md:min-h-[calc(100vh-89px)] bg-primary-bg-gradient-section">
-      <div className="flex gap-8 flex-col grow min-w-full md:min-w-175 items-center justify-center px-2 md:px-0 py-6 md:py-12">
+      <div className="flex gap-6 md:gap-8 flex-col grow min-w-full md:min-w-175 items-center justify-center px-2 md:px-0 pt-2 pb-6 md:pt-6 md:pb-12">
         <div className="flex-flex-col gap-2 md:min-w-175 self-start px-4">
           <h1 className="text-xl md:text-2xl font-bold text-secondary-shade">
             <span className="text-secondary-tint">{questionNumber}.</span>{' '}
@@ -61,10 +61,23 @@ const QuestionScreen = () => {
               </button>
             )
           })}
+
+          <div className="max-w-119 min-h-17.5 h-fit">
+            {selectedAnswer && (
+              <div className="text-sm space-y-4 md:space-y-6 rounded-lg border-[3px] border-primary-stroke-tint px-4 md:px-6 py-3 md:py-4">
+                <span className="font-bold mr-1">Explanation:</span>
+                {
+                  currentQuestion.options.find(
+                    (opt) => opt.id === selectedAnswer
+                  )?.feedback
+                }
+              </div>
+            )}
+          </div>
         </div>
       </div>
 
-      <div className="w-full bg-secondary-bg-gradient-a border-t-[3px] border-secondary-base/10 flex flex-row items-center justify-between gap-2 md:gap-3 px-2 md:px-8 py-3 md:py-6">
+      <div className="w-full bg-secondary-bg-gradient-a border-t-[3px] border-secondary-base/10 flex flex-row items-center justify-between gap-2 md:gap-3 px-2 md:px-8 py-2 md:py-6">
         <button
           onClick={goBack}
           className="cursor-pointer px-4 py-2 bg-transparent border-[3px] border-white/20 rounded-lg transition-all flex items-center gap-3 text-base min-h-13.5"
